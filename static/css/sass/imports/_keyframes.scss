@@ -1,0 +1,66 @@
+// keyframe animations
+@-webkit-keyframes logo-first{
+    0% { -webkit-transform: translate3d(0, -2em, 0) rotate(1deg); }
+    25%{ -webkit-transform: translate3d(0, 0, 0) rotate(0); }
+}
+@-webkit-keyframes logo-first-after{
+    0% { margin-top: -.6em; }
+    25%{ margin-top: 0; }
+}
+@-webkit-keyframes logo-second{
+    0%   { -webkit-transform: translate3d(0, -3.14em, 0) rotate(-1deg); }
+    25%  { -webkit-transform: translate3d(0,  -.55em, 0) rotate(-2.35deg); }
+    37.5%{ -webkit-transform: translate3d(0,  -.55em, 0) rotate(-2.35deg); }
+    62.5%{ -webkit-transform: translate3d(0,       0, 0) rotate(0); }
+}
+@-webkit-keyframes logo-second-after{
+    0%   { margin-top: -.59em; }
+    37.5%{ margin-top: -.59em; }
+    62.5%{ margin-top: 0; }
+}
+@-webkit-keyframes logo-third{
+    0%   { -webkit-transform: translate3d(0, -4.4em, 0) rotate(1deg); }
+    25%  { -webkit-transform: translate3d(0, -1.6em, 0) rotate(0deg); }
+    37.5%{ -webkit-transform: translate3d(0, -1.6em, 0) rotate(0deg); }
+    62.5%{ -webkit-transform: translate3d(0, -.46em, 0) rotate(2deg); }
+    75%  { -webkit-transform: translate3d(0, -.46em, 0) rotate(2deg); }
+    to   { -webkit-transform: translate3d(0,      0, 0) rotate(0); }
+}
+@-webkit-keyframes logo-third-after{
+    0% { margin-top: -.6em; }
+    75%{ margin-top: -.6em; }
+    to { margin-top: 0; }
+}
+
+@keyframes logo-first{
+    0% { transform: translate3d(0, -2em, 0) rotate(1deg); }
+    25%{ transform: translate3d(0, 0, 0) rotate(0); }
+}
+@keyframes logo-first-after{
+    0% { margin-top: -.6em; }
+    25%{ margin-top: 0; }
+}
+@keyframes logo-second{
+    0%   { transform: translate3d(0, -3.14em, 0) rotate(-1deg); }
+    25%  { transform: translate3d(0,  -.55em, 0) rotate(-2.35deg); }
+    37.5%{ transform: translate3d(0,  -.55em, 0) rotate(-2.35deg); }
+    62.5%{ transform: translate3d(0,       0, 0) rotate(0); }
+}
+@keyframes logo-second-after{
+    0%   { margin-top: -.59em; }
+    37.5%{ margin-top: -.59em; }
+    62.5%{ margin-top: 0; }
+}
+@keyframes logo-third{
+    0%   { transform: translate3d(0, -4.4em, 0) rotate(1deg); }
+    25%  { transform: translate3d(0, -1.6em, 0) rotate(0deg); }
+    37.5%{ transform: translate3d(0, -1.6em, 0) rotate(0deg); }
+    62.5%{ transform: translate3d(0, -.46em, 0) rotate(2deg); }
+    75%  { transform: translate3d(0, -.46em, 0) rotate(2deg); }
+    to   { transform: translate3d(0,      0, 0) rotate(0); }
+}
+@keyframes logo-third-after{
+    0% { margin-top: -.6em; }
+    75%{ margin-top: -.6em; }
+    to { margin-top: 0; }
+}

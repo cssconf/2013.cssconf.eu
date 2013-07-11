@@ -31,12 +31,27 @@
         @include transition(transform .5s ease);
       }
     }
-    :first-child::after {
-    }
     :nth-child(2)::after {
       @include rotate(1deg);
     }
-    :last-child::after {
+
+    :nth-child(1) {
+      @include animation(logo-first $logoanim-dur $logoanim-rep $logoanim-delay both);
+      &::after{
+        @include animation(logo-first-after $logoanim-dur $logoanim-rep $logoanim-delay both);
+      }
+    }
+    :nth-child(2) {
+      @include animation(logo-second $logoanim-dur $logoanim-rep $logoanim-delay both);
+      &::after{
+        @include animation(logo-second-after $logoanim-dur $logoanim-rep $logoanim-delay both);
+      }
+    }
+    :nth-child(3) {
+      @include animation(logo-third $logoanim-dur $logoanim-rep $logoanim-delay both);
+      &::after{
+        @include animation(logo-third-after $logoanim-dur $logoanim-rep $logoanim-delay both);
+      }
     }
   }
 }
