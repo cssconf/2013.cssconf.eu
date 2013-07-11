@@ -127,6 +127,13 @@ nav, section, .sitefooter, .intro, article, main.md {
 .cta {
   text-align: center;
   margin-bottom: 6em;
+  span{
+    display: block;
+    max-width: 267px;
+    margin: 15px auto 0;
+    font-size: .75em;
+    color: lighten($color_text_dark, 50%);
+  }
 }
 
 // padded sections
@@ -180,6 +187,15 @@ input[type='submit'],
   &:focus {
     background-color: $color_red_hover;
     color: $color_white;
+  }
+  &.inact{
+    -webkit-filter: grayscale(.5);
+    filter: grayscale(.5);
+    &:hover,
+    &:focus{
+      background-color: $color_red;
+      color: $color_white;
+    }
   }
 }
 
