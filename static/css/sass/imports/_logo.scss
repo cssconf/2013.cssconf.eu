@@ -55,38 +55,3 @@
     }
   }
 }
-
-// .logo-container-circle {
-//   max-width: 100%;
-//   width: 3em;
-//   height: 3em;
-//   margin: 0 auto;
-//   padding: 0.2em 0.5em 0.8em;
-//   border-radius: 50%;
-//   border: 3px solid $color_red;
-//   //overflow: visible;
-//   .logo:after {
-//     width: 10em;
-//     margin: 0 -3.5em;
-//     top: .9em;
-//     border-top: 3px solid $color_red;
-//     border-bottom: 3px solid $color_red;
-//   }
-//   &:hover {
-//     .logo {
-//       &:first-child::after {
-//         @include rotate(361deg);
-//         @include rotate(180deg);
-//         transform-origin: center;
-//       }
-//       &:nth-child(2)::after {
-//         @include rotate(-360deg);
-//         @include rotate(-180deg);
-//       }
-//       &:last-child::after {
-//         @include rotate(359deg);
-//         @include rotate(180deg);
-//       }
-//     }
-//   }
-// }
