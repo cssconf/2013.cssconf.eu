@@ -1,0 +1,215 @@
+body {
+  font-size: 87.5%;
+  color: $color-text;
+  line-height: 1.5;
+  font-family: "freight-text-pro", Times, Georgia, serif;
+  letter-spacing: .005em;
+  border-top: 10px solid $color_mint;
+  @include perspective(1000px);
+  @include mq($mq-s) {
+    font-size: 100%;
+  }
+  @include mq($mq-m) {
+    font-size: 112.5%;
+  }
+  @include mq($mq-l) {
+    font-size: 125%;
+  }
+}
+
+input, select, textarea, .subhead, .meta, .details {
+  font-family: "jaf-facitweb", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+nav, h1, h2, h3, h4, h5, h6, .h, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
+  font-weight: bold;
+  font-family: "jaf-facitweb", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.h, .h1, .h2, .h3, .h4, .h5 {
+  margin-bottom: .75em;
+}
+
+.h1 {
+  font-size: 2.5em; //35
+}
+.h2 {
+  font-size: 2em; //28
+}
+.h3 {
+  font-size: 1.5em; //21
+}
+.h4 {
+  font-size: 1.1428em; //16
+}
+.h5 {
+  font-size: .75em;
+  color: $color_red;
+  @include uppercase;
+}
+
+p, ul, ol, form, blockquote {
+  margin-bottom: 1.5em;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+/* list styles currently needed for CfS */
+ul, ol {
+  margin: 0 0 1.5em 1em;
+  li {
+    margin-bottom: .5em;
+    padding-left: .5em;
+    list-style-type: square;
+  }
+}
+ol {
+  li {
+    list-style-type: decimal;
+  }
+}
+
+nav, section, .sitefooter, .intro, article, main.md {
+  padding: 2em -webkit-calc(50% - 10em);
+  padding: 2em calc(50% - 10em);
+  @include mq($mq-s){
+    padding: 3em -webkit-calc(50% - 16em);
+    padding: 3em calc(50% - 16em);
+  }
+  @include mq($mq-l){
+    padding: 3em -webkit-calc(50% - 18em);
+    padding: 3em calc(50% - 18em);
+  }
+}
+
+.spnsr {
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+
+.siteheader {
+  text-align: center;
+}
+
+.sitefooter {
+  @include coloredBlock3;
+  p {
+    font-size: .75em;
+    margin-bottom: .75em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.subhead {
+  @include uppercase;
+  font-weight: bold;
+}
+
+.intro {
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 0;
+  @include mq($mq-s){
+    font-size: 1.1428em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+  }
+}
+
+.cta {
+  text-align: center;
+  margin-bottom: 6em;
+}
+
+// padded sections
+
+article, .sitefooter {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+
+
+// links
+a {
+  outline: none;
+  color: $color_blue_link;
+  text-decoration: none;
+  transition-property: color, background-color, border-color;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+  &:hover,
+  &:focus {
+    color: $color_blue_hover;
+    text-decoration: none;
+  }
+  &.red_link {
+    color: $color_red;
+    &:hover,
+    &:focus {
+      color: $color_red_hover;
+    }
+  }
+}
+
+
+// buttons, forms elements
+
+input[type='submit'],
+.btn {
+  display: inline-block;
+  padding: .5em 1.5em;
+  border: 0;
+  cursor: pointer;
+  background-color: $color_red;
+  color: $color_white;
+  @include uppercase;
+  &:link,
+  &:visited {
+    color: $color_white;
+  }
+  &:hover,
+  &:focus {
+    background-color: $color_red_hover;
+    color: $color_white;
+  }
+}
+
+.btn-cta {
+  font-size: 1.5em;
+}
+
+input {
+  font-size: 1em;
+}
+
+// nav
+
+nav {
+  padding-top: .5em;
+  padding-bottom: .5em;
+  background: $color_red;
+  @include uppercase;
+  a {
+    display: inline-block;
+    padding: 0 .25em;
+    color: $color_white;
+    &:hover,
+    &:focus {
+      color: $color_white;
+    }
+  }
+}
+
+.meta {
+  color: $color_text_dark;
+  @include uppercase;
+}

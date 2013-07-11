@@ -1,0 +1,77 @@
+.cssconf-logo {
+  position: relative;
+  font-size: 3em;
+  line-height: 1.2;
+  padding: .5em 0 0;
+  font-weight: bold;
+  text-align: center;
+  @include mq($mq-s) {
+    padding: 1em 0;
+  }
+  a{
+    :nth-child(1n) {
+      overflow: hidden;
+      display: block;
+      position: relative;
+      color: $color_blue;
+      @include transition(color .5s ease);
+      &:hover{
+        color: $color_blue_hover;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: .85em;
+        height: 2em;
+        left: 0;
+        right: 0;
+        border-top: 3px solid $color_red;
+        background-color: $color_white;
+        @include rotate(-1deg);
+        @include transition(transform .5s ease);
+      }
+    }
+    :first-child::after {
+    }
+    :nth-child(2)::after {
+      @include rotate(1deg);
+    }
+    :last-child::after {
+    }
+  }
+}
+
+// .logo-container-circle {
+//   max-width: 100%;
+//   width: 3em;
+//   height: 3em;
+//   margin: 0 auto;
+//   padding: 0.2em 0.5em 0.8em;
+//   border-radius: 50%;
+//   border: 3px solid $color_red;
+//   //overflow: visible;
+//   .logo:after {
+//     width: 10em;
+//     margin: 0 -3.5em;
+//     top: .9em;
+//     border-top: 3px solid $color_red;
+//     border-bottom: 3px solid $color_red;
+//   }
+//   &:hover {
+//     .logo {
+//       &:first-child::after {
+//         @include rotate(361deg);
+//         @include rotate(180deg);
+//         transform-origin: center;
+//       }
+//       &:nth-child(2)::after {
+//         @include rotate(-360deg);
+//         @include rotate(-180deg);
+//       }
+//       &:last-child::after {
+//         @include rotate(359deg);
+//         @include rotate(180deg);
+//       }
+//     }
+//   }
+// }

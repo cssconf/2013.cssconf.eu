@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="500">
+  <def>
+    <style type="text/css">
+      <![CDATA[
+        svg{
+          background-color: #f1614b;
+          background-image: -webkit-linear-gradient(270deg, transparent,transparent 50%,#2777b1 50%,#2777b1),-webkit-linear-gradient(270deg, #bfeae2,#bfeae2 50%,transparent 50%,transparent);
+          background-image: -moz-linear-gradient(270deg, transparent,transparent 50%,#2777b1 50%,#2777b1),-moz-linear-gradient(270deg, #bfeae2,#bfeae2 50%,transparent 50%,transparent);
+          background-image: -o-linear-gradient(270deg, transparent,transparent 50%,#2777b1 50%,#2777b1),-o-linear-gradient(270deg, #bfeae2,#bfeae2 50%,transparent 50%,transparent);
+          background-image: linear-gradient(180deg, transparent,transparent 50%,#2777b1 50%,#2777b1),linear-gradient(180deg, #bfeae2,#bfeae2 50%,transparent 50%,transparent);
+          background-size: 50% 100%;
+          background-repeat: no-repeat;
+          background-position: 0 0, 100% 0;
+        }
+        circle, path{ fill: #8fd7c8; }
+        circle:first-child{ fill: #bfeae2; }
+        g:nth-of-type(2) circle{ fill: #589dc6; }
+        g:nth-of-type(2) path{ fill: #16648b; }
+        g:nth-of-type(2) circle:first-child{ fill: #2777b1; }
+        g:nth-of-type(3) circle{ fill: #fbf2eb; }
+        g:nth-of-type(3) path{ fill: #d15c46; }
+        g:nth-of-type(3) circle:first-child{ fill: #f1614b; }
+      ]]>
+    </style>
+  </def>
+  <g transform="translate(125, 125)">
+    <circle cx="0" cy="0" r="100"/>
+    <circle cx="-50" cy="-20" r="15"/>
+    <circle cx="50" cy="-20" r="15"/>
+    <path d="M58,0 A30,30 -30 1,1 -58,0 z" transform="translate(0, 35) scale(1, 0.5)"/>
+  </g>
+  <g transform="translate(375, 125)">
+    <circle cx="0" cy="0" r="100"/>
+    <circle cx="-50" cy="-20" r="15"/>
+    <circle cx="50" cy="-20" r="15"/>
+    <path d="M58,0 A30,30 -30 1,1 -58,0 z" transform="translate(0, 35) scale(1, 0.5)"/>
+  </g>
+  <g transform="translate(125, 375)">
+    <circle cx="0" cy="0" r="100"/>
+    <circle cx="-50" cy="-20" r="15"/>
+    <circle cx="50" cy="-20" r="15"/>
+    <path d="M58,0 A30,30 -30 1,1 -58,0 z" transform="translate(0, 35) scale(1, 0.5)"/>
+  </g>
+  <g transform="translate(375, 375)">
+    <circle cx="0" cy="0" r="100"/>
+    <circle cx="-50" cy="-20" r="15"/>
+    <circle cx="50" cy="-20" r="15"/>
+    <path d="M58,0 A30,30 -30 1,1 -58,0 z" transform="translate(0, 35) scale(1, 0.5)"/>
+  </g>
+</svg>

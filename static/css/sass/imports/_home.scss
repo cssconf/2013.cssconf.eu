@@ -1,0 +1,117 @@
+// speakers overview list
+.copy {
+  direction: ltr;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.details {
+  @include uppercase;
+  font-size: .75em;
+}
+
+.home {
+  .article {
+    @include perspective-origin(50%);
+    padding: 3em 0;
+    @include mq($mq-s){
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    > .fig,
+    > .copy {
+      @include box-sizing(border-box);
+    }
+    > .fig {
+      padding: 0 -webkit-calc(50% - 10em);
+      padding: 0 calc(50% - 10em);
+      img {
+        display: block;
+        width: 100%;
+        max-width: 20em;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+    }
+    > .copy {
+      padding: 2em -webkit-calc(50% - 10em);
+      padding: 2em calc(50% - 10em);
+      h3 {
+        span {
+          display: block;
+          font-size: .5em;
+          @include uppercase;
+        }
+      }
+    }
+    &:nth-child(odd) {
+      @include coloredBlock1;
+    }
+    &:nth-child(even) {
+      @include coloredBlock2;
+    }
+    &.cfs {
+      @include pattern_grid;
+      .copy {
+        color: $color_blue;
+      }
+      .btn{
+        &,
+        &:hover{
+          color: $color-white;
+        }
+      }
+    }
+    @include mq($mq-s) {
+      padding: 0;
+      > .fig,
+      > .copy {
+        display: table-cell;
+        width: 60%;
+        padding: 0;
+      }
+      > .fig {
+        overflow: hidden;
+        width: 40%;
+        img {
+           border-radius: 0;
+            max-width: 100%;
+        }
+      }
+      &:nth-child(odd) {
+        direction: rtl;
+        > .copy {
+          padding: 2em 3em 2em 4em;
+          @include mq($mq-m){
+            padding: 2em 3em 2em 10em;
+          }
+          @include mq($mq-l){
+            padding-left: 16em;
+          }
+        }
+        > .fig {
+          img {
+            margin: 0 auto 0 0;
+          }
+        }
+      }
+      &:nth-child(even) {
+        > .copy {
+          padding: 2em 4em 2em 2em;
+          @include mq($mq-m){
+            padding: 2em 6em 2em 3em;
+          }
+          @include mq($mq-l){
+            padding-right: 16em;
+          }
+        }
+        > .fig {
+          img {
+            margin: 0 0 0 auto;
+          }
+        }
+      }
+    }
+  }
+}

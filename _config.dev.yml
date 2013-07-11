@@ -1,0 +1,6 @@
+safe:     true
+pygments: true
+
+name:     CSSconf.eu
+env:      dev
+cdn: 

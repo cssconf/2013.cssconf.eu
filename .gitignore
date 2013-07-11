@@ -1,0 +1,6 @@
+/_site/
+/.sass-cache/
+*.js
+*.coffee
+*.ts
+*.DS_Store

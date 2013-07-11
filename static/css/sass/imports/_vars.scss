@@ -1,0 +1,19 @@
+/* Colors */
+$color_white      : #FFF;
+$color_black      : #000;
+$color_darkgray   : #171717;
+$color_blue       : #2777B1;
+$color_blue_link  : lighten(saturate($color_blue, 50%), 10%);
+$color_blue_hover : lighten(saturate($color_blue, 80%), 20%);
+$color_red        : #F1614B;
+$color_red_hover  : #FF7A53;
+$color_mint       : #BFEAE2;
+$color_mint_link  : darken(saturate($color_mint, 80%), 20%);
+$color_mint_hover : lighten(saturate($color_mint, 80%), 5%);
+$color_text       : $color_blue;
+$color_text_dark  : $color_darkgray;
+
+/* Media Query Breakpoints */
+$mq-s: 768px;
+$mq-m: 1024px;
+$mq-l: 1280px;

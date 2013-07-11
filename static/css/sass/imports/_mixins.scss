@@ -1,0 +1,52 @@
+/* Mixins */
+
+@mixin mq($value, $operator: 'min-width', $query: 'screen') {
+  @media #{$query} and (#{$operator}: #{$value}) {
+    @content;
+  }
+}
+
+@mixin uppercase {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+@mixin pattern-grid {
+  background-color: $color_white;
+
+  @include background(
+    linear-gradient(rgba($color_mint, .15) 2px, transparent 2px),
+    linear-gradient(90deg, rgba($color_mint, .15) 2px, transparent 2px)
+  );
+
+  background-size: 2em 2em, 2em 2em;
+  background-position: -2px -2px, -2px -2px;
+}
+
+@mixin coloredBlock1 {
+  background-color: $color_red;
+  color: $color_white;
+  a {
+    color: $color_mint_link;
+    &:hover,
+    &:focus {
+      color: $color_mint_hover;
+    }
+  }
+}
+
+@mixin coloredBlock2 {
+  background-color: $color_mint;
+}
+
+@mixin coloredBlock3 {
+  background-color: $color_text;
+  color: $color_white;
+  a {
+    color: $color_mint_link;
+    &:hover,
+    &:focus {
+      color: $color_mint_hover;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html class="look-ma-no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>{{ page.title }}</title>
+  {% include htmlhead.html %}
+  <link href="{{ site.cdn }}/static/css/unsupported.css{{ site.time | date: "?%s" }}" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body class="unsupported">
+  {% include header.html %}
+
+   <main {% if page.contentclass %}class="{{ page.contentclass }}"{%endif%}>
+    {{ content }}
+  </main>
+
+  <div class="sitefooter">
+    {% include footer.html %}
+  </div>
+</body>
+</html>

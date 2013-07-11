@@ -1,0 +1,99 @@
+@mixin face-colors ($background, $eyes, $mouth) {
+    background-color: $background;
+    @include background-image(radial-gradient(circle at 51px 81px, $eyes, $eyes 15px, transparent 14px, transparent),
+        radial-gradient(circle at 151px 81px, $eyes, $eyes 15px, transparent 14px, transparent));
+    &::before{
+        background: $mouth;
+    }
+}
+.faces{
+
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+
+    $size: 20em;
+
+    $eye1: #8fd7c8;
+    $mouth1: $eye1;
+    $bg1: #bfeae2;
+
+    $eye2: #589dc6;
+    $mouth2: #16648b;
+    $bg2: #2777b1;
+
+    $eye3: #fbf2eb;
+    $mouth3: #d15c46;
+    $bg3: #f1614b;
+
+    width: $size;
+    height: $size;
+
+    direction: ltr;
+    background-color: #F1614B;
+
+    @include mq($mq-s){
+      border-radius: 0;
+      display: table-cell;
+    }
+    // fallback for safari
+    background-image: url('../img/speakers/faces.svg');
+
+    background-image:
+        radial-gradient(circle                at $size*.152 $size*.212, $eye1,   $eye1   $size*.03,  transparent $size*.03,  transparent), // left eye
+        radial-gradient(circle                at $size*.352 $size*.212, $eye1,   $eye1   $size*.03,  transparent $size*.03,  transparent), // right eye
+        radial-gradient($size*1.6  $size*.332 at $size*.25  $size*.294, $bg1,    $bg1    $size*.18,  transparent $size*.18,  transparent), // mouth mask
+        radial-gradient($size*.232 $size*.116 at $size*.25  $size*.32,  $mouth1, $mouth1 $size*.116, transparent $size*.116, transparent), // mouth
+        radial-gradient(circle                at $size*.25  $size*.25,  $bg1,    $bg1    $size*.2,   transparent $size*.2,   transparent), // base circle
+
+        radial-gradient(circle                at $size*.152 $size*.212, $eye2,   $eye2   $size*.03,  transparent $size*.03,  transparent), // left eye
+        radial-gradient(circle                at $size*.352 $size*.212, $eye2,   $eye2   $size*.03,  transparent $size*.03,  transparent), // right eye
+        radial-gradient($size*1.6  $size*.332 at $size*.25  $size*.294, $bg2,    $bg2    $size*.18,  transparent $size*.18,  transparent), // mouth mask
+        radial-gradient($size*.232 $size*.116 at $size*.25  $size*.32,  $mouth2, $mouth2 $size*.116, transparent $size*.116, transparent), // mouth
+        radial-gradient(circle                at $size*.25  $size*.25,  $bg2,    $bg2    $size*.2,   transparent $size*.2,   transparent), // base circle
+
+        radial-gradient(circle                at $size*.152 $size*.212, $eye3,   $eye3   $size*.03,  transparent $size*.03,  transparent), // left eye
+        radial-gradient(circle                at $size*.352 $size*.212, $eye3,   $eye3   $size*.03,  transparent $size*.03,  transparent), // right eye
+        radial-gradient($size*1.6  $size*.332 at $size*.25  $size*.294, $bg3,    $bg3    $size*.18,  transparent $size*.18,  transparent), // mouth mask
+        radial-gradient($size*.232 $size*.116 at $size*.25  $size*.32,  $mouth3, $mouth3 $size*.116, transparent $size*.116, transparent), // mouth
+        radial-gradient(circle                at $size*.25  $size*.25,  $bg3,    $bg3    $size*.2,   transparent $size*.2,   transparent), // base circle
+
+        radial-gradient(circle                at $size*.152 $size*.212, $eye1,   $eye1   $size*.03,  transparent $size*.03,  transparent), // left eye
+        radial-gradient(circle                at $size*.352 $size*.212, $eye1,   $eye1   $size*.03,  transparent $size*.03,  transparent), // right eye
+        radial-gradient($size*1.6  $size*.332 at $size*.25  $size*.294, $bg1,    $bg1    $size*.18,  transparent $size*.18,  transparent), // mouth mask
+        radial-gradient($size*.232 $size*.116 at $size*.25  $size*.32,  $eye1,   $eye1   $size*.116, transparent $size*.116, transparent), // mouth
+        radial-gradient(circle                at $size*.25  $size*.25,  $bg1,    $bg1    $size*.2,   transparent $size*.2,   transparent), // base circle
+
+        linear-gradient(45deg, $bg1 25%, transparent 25%, transparent 75%, $bg1 75%, $bg1),
+        linear-gradient(45deg, $bg1 25%, transparent 25%, transparent 75%, $bg1 75%, $bg1)
+    ;
+    background-size: $size $size;
+    background-position:
+        0 0,
+        0 0,
+        0 0,
+        0 0,
+        0 0,
+
+        $size/2 0,
+        $size/2 0,
+        $size/2 0,
+        $size/2 0,
+        $size/2 0,
+
+        0 $size/2,
+        0 $size/2,
+        0 $size/2,
+        0 $size/2,
+        0 $size/2,
+
+        $size/2 $size/2,
+        $size/2 $size/2,
+        $size/2 $size/2,
+        $size/2 $size/2,
+        $size/2 $size/2,
+
+        0 0,
+        $size/2 $size/2
+    ;
+}
