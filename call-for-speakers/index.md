@@ -115,4 +115,4 @@ We are proud to support and uphold the [Conference Code of Conduct](http://confc
 #### Submit Your Talk
 
 
-<iframe src="https://docs.google.com/forms/d/1PQnfGZ7QZfYipSQRoI-tOvE2YsRhOmJLP1ygPy0ojpQ/viewform?embedded=true#start=embed" width="700" height="1500" frameborder="0" marginheight="0" marginwidth="0">Wird geladen...</iframe>
+<iframe src="https://docs.google.com/forms/d/1PQnfGZ7QZfYipSQRoI-tOvE2YsRhOmJLP1ygPy0ojpQ/viewform?embedded=true#start=embed" width="700" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
