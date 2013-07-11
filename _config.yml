@@ -1,3 +1,4 @@
 name: CSSconf.eu
 env:  prod
 cdn:  http://d1sn6do4v0r9n8.cloudfront.net
+url:  http://2013.cssconf.eu
