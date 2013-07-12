@@ -1,0 +1,24 @@
+{
+  "name": "2013.cssconf.eu",
+  "description": "Website for CSSconf.eu - 2013",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "jekyll  serve --watch --config _config.dev.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cssconf/2013.cssconf.eu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cssconf/2013.cssconf.eu/issues"
+  },
+  "devDependencies": {
+    "grunt-cli": "~0.1.9",
+    "grunt": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-compass": "~0.3.0",
+    "grunt-shell": "~0.3.1",
+    "grunt-contrib-clean": "~0.4.1"
+  }
+}

@@ -1,5 +1,19 @@
-2013.cssconf.eu
-===============
+# 2013.cssconf.eu
 
-* $ jekyll  serve --watch --config _config.dev.yml
-* $ compass watch --output-style compressed 
+## Setup
+
+    $ nave use stable
+    $ npm install -g grunt-cli
+    $ npm install
+
+## Run server with development config
+
+    $ npm start
+
+## Watch SASS with compass
+
+    $ compass watch --output-style compressed
+
+## Deploy
+
+    $ grunt deploy
