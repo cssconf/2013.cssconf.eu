@@ -141,6 +141,13 @@ nav, section, .sitefooter, .intro, article, main.md {
     max-width: 22em;
     margin: .75em auto 0;
     font-size: .75em;
+    color: lighten($color_text_dark, 50%);
+    a{
+      color: inherit;
+      &:hover{
+        color: $color_text_dark;
+      }
+    }
   }
 }
 
