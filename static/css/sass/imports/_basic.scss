@@ -187,12 +187,11 @@ input[type='submit'],
     background-color: $color_red_hover;
     color: $color_white;
   }
-  &.inact{
-    -webkit-filter: grayscale(.5);
-    filter: grayscale(.5);
+  &.inact {
+    background-color: desaturate($color_red, 50%);
     &:hover,
-    &:focus{
-      background-color: $color_red;
+    &:focus {
+      background-color: desaturate($color_red, 50%);
       color: $color_white;
     }
   }
