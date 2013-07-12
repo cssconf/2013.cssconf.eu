@@ -92,6 +92,15 @@ nav, section, .sitefooter, .intro, article, main.md {
   padding-top: 8em;
   padding-bottom: 8em;
 }
+.spnsr-list {
+  a {
+    display: inline-block;
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+  }
+}
 
 .siteheader {
   text-align: center;
@@ -149,7 +158,7 @@ a {
   outline: none;
   color: $color_blue_link;
   text-decoration: none;
-  transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color, opacity;
   transition-duration: .15s;
   transition-timing-function: ease-in-out;
   &:hover,
