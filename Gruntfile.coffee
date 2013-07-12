@@ -43,7 +43,7 @@ module.exports = (grunt) ->
       gitRebaseMaster:
         command: 'git rebase master'
       gitAddNewAssets:
-        command: () -> ['git add -A ', targetDirectory, ' && git add __config.yml'].join('')
+        command: () -> ['git add -A ', targetDirectory, ' && git add _config.yml'].join('')
       gitCommit:
         command: () -> ['git commit -m "deployment: ', hash, '"'].join('')
       gitPush:
