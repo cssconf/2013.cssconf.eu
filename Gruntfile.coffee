@@ -2,7 +2,7 @@ module.exports = (grunt) ->
 
   hash = ''
   shortHash = ''
-  targetDirectory = 'dist'
+  targetDirectory = 'cdn'
 
   grunt.initConfig {
     pkg: grunt.file.readJSON('package.json')
@@ -35,7 +35,7 @@ module.exports = (grunt) ->
       moveFiles:
         command: () -> ['mkdir ', targetDirectory, ' && mv tmp ', targetDirectory, '/', shortHash].join('')
       config:
-        command: () -> ['sed \'s/{hash}/', shortHash, '/\' _config.yml.default > _config.yml'].join('')
+        command: () -> ['sed \'s/{uniqueTarget}/', targetDirectory, '\\/', shortHash, '/\' _config.yml.default > _config.yml'].join('')
       gitGhPages:
         command: 'git checkout gh-pages'
       gitMaster:
