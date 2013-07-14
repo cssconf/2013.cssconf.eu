@@ -1,8 +1,9 @@
+
 body {
   font-size: 87.5%;
   color: $color-text;
   line-height: 1.5;
-  font-family: "freight-text-pro", Times, Georgia, serif;
+  @include font-serif-mobile;
   letter-spacing: .005em;
   border-top: 10px solid $color_mint;
   @include perspective(1000px);
@@ -10,6 +11,7 @@ body {
     font-size: 100%;
   }
   @include mq($mq-m) {
+    @include font-serif;
     font-size: 112.5%;
   }
   @include mq($mq-l) {
@@ -18,12 +20,12 @@ body {
 }
 
 input, select, textarea, .subhead, .meta, .details, .cta {
-  font-family: "jaf-facitweb", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  @include font-sans-serif;
 }
 
 nav, h1, h2, h3, h4, h5, h6, .h, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
   font-weight: bold;
-  font-family: "jaf-facitweb", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  @include font-sans-serif;
 }
 
 .h, .h1, .h2, .h3, .h4, .h5 {

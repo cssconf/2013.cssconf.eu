@@ -55,3 +55,15 @@
   -webkit-animation: $anim;
   animation: $anim;
 }
+
+@mixin font-serif{
+  font-family: 'freight-text-pro', Times, Georgia, serif;
+}
+
+@mixin font-serif-mobile{
+  font-family: Times, Georgia, serif;
+}
+
+@mixin font-sans-serif{
+  font-family: Ubuntu, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
