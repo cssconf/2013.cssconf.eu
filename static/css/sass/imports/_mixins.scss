@@ -57,11 +57,11 @@
 }
 
 @mixin font-serif{
-  font-family: 'freight-text-pro', Times, Georgia, serif;
+  font-family: 'FreightText', Times New Roman, Georgia, serif;
 }
 
 @mixin font-serif-mobile{
-  font-family: Times, Georgia, serif;
+  font-family: Times New Roman, Georgia, serif;
 }
 
 @mixin font-sans-serif{

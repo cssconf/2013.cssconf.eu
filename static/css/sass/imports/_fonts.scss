@@ -4,10 +4,65 @@
   src: local('Ubuntu'),
        local('Ubuntu Regular'),
        url('#{$font-path}ubuntu-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: 'Ubuntu';
   src: local('Ubuntu Bold'),
        url('#{$font-path}ubuntu-bold.woff') format('woff');
   font-weight: bold;
+  font-style: normal;
+}
+
+/*! @license
+ * MyFonts Webfont Build ID 2601864, 2013-07-14T12:08:04-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Freight Text Bold by GarageFonts
+ * URL: http://www.myfonts.com/fonts/garagefonts/freight-text/bold/
+ * 
+ * Webfont: Freight Text Medium by GarageFonts
+ * URL: http://www.myfonts.com/fonts/garagefonts/freight-text/medium/
+ * 
+ * Webfont: Freight Text Medium Italic by GarageFonts
+ * URL: http://www.myfonts.com/fonts/garagefonts/freight-text/medium-italic/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2601864
+ * Webfonts copyright: Copyright &#xFFA9; 2004, Joshua Darden &amp; Phil's Fonts, Inc. All rights reserved. Published by Garagefonts USA 301-260-2285 www.garagefonts.com
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+@import url("//hello.myfonts.net/count/27b388");
+@font-face {
+  font-family: 'FreightText';
+  src: local('FreightText Bold'),
+       url('#{$font-path}/freighttextbold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+ 
+  
+@font-face {
+  font-family: 'FreightText';
+  src: local('FreightText Medium'),
+       url('#{$font-path}/freighttextmedium.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+  
+@font-face {
+  font-family: 'FreightText';
+  src: local('FreightText MediumItalic'),
+       url('#{$font-path}/freighttextmediumitalic.woff');
+  font-weight: normal;
+  font-style: italic;
 }
