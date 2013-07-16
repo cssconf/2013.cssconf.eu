@@ -7,9 +7,11 @@
 ---
 
 
-### Call for Speakers
+### Call for Speakers – Closed
 
-We are inviting the CSS community to submit proposals for the upcoming CSSConf.eu (September 13, 2013, Berlin, Germany). This Call for Speakers closes at midnight of July 15, 2013 (CEST).
+_This Call for Speakers closed on midnight of July 15, 2013 (CEST)._
+
+We are inviting the CSS community to submit proposals for the upcoming CSSConf.eu (September 13, 2013, Berlin, Germany). 
 
 This is what we call a “Hybrid CFS”: If you think you have something great to talk about, tell us all about it and we’ll consider your entry. If you know someone who has something great to talk about, nominate them. And if you are interested in hearing about a particular topic, nominate the topic and we can try to find a match.
 
