@@ -17,11 +17,17 @@ module.exports = (grunt) ->
           environment: 'production'
 
     copy:
-      dist:
+      img:
         expand: true
         cwd: 'static/img'
         src: ['**']
         dest: 'tmp/static/img'
+        filter: 'isFile'
+      fonts:
+        expand: true
+        cwd: 'static/fonts'
+        src: ['**']
+        dest: 'tmp/static/fonts'
         filter: 'isFile'
 
     shell:
@@ -40,13 +46,17 @@ module.exports = (grunt) ->
         command: 'git checkout gh-pages'
       gitMaster:
         command: 'git checkout master'
+      gitUpdateMaster:
+        command: 'git pull --rebase'
       gitRebaseMaster:
         command: 'git rebase master'
       gitAddNewAssets:
         command: () -> ['git add -A ', targetDirectory, ' && git add _config.yml'].join('')
       gitCommit:
         command: () -> ['git commit -m "deployment: ', hash, '"'].join('')
-      gitPush:
+      gitPushMaster:
+        command: 'git push origin master'
+      gitPushGhPages:
         command: 'git push origin gh-pages'
 
   }
@@ -65,20 +75,14 @@ module.exports = (grunt) ->
     'shell:config'
   ]
 
-  grunt.registerTask 'git-prepare', [
-    'shell:gitGhPages'
-    'shell:gitRebaseMaster'
-  ]
-
-  grunt.registerTask 'git-finalize', [
+  grunt.registerTask 'deploy', [
+    'shell:gitMaster'
+    'shell:gitUpdateMaster'
+    'build-assets'
     'shell:gitAddNewAssets'
     'shell:gitCommit'
-    'shell:gitPush'
-    'shell:gitMaster'
-  ]
-
-  grunt.registerTask 'deploy', [
-    'git-prepare'
-    'build-assets'
-    'git-finalize'
+    'shell:gitPushMaster'
+    'shell:gitGhPages'
+    'shell:gitRebaseMaster'
+    'shell:gitPushGhPages'
   ]
