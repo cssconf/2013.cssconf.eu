@@ -100,3 +100,14 @@ contentclass: home
     </p>
   </div>
 </article>
+
+<section>
+  <h2 class="h2">News</h2>
+  {% for post in site.tags.news limit: 3 %}
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+      {% if post.date %}<time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>{% endif %}
+      <h3 class="h3"><a href="{{post.url}}" itemtype="name">{{ post.title }}</a></h3>
+      {{ post.excerpt }}
+    </article>
+  {% endfor %}
+</section>
