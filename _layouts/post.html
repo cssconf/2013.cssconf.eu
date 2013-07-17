@@ -9,12 +9,20 @@
 
 <body>
 
-  {% include header.html %}
+  {% include header-small.html %}
 
   <main {% if page.contentclass %}class="{{ page.contentclass }}" {%endif%}itemscope itemtype="http://schema.org/BlogPosting">
-    {% if page.date %}<time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string }}</time>{% endif %}
-    <h3 class="h3" itemtype="name">{{ page.title }}</h3>
-    {{ content }}
+
+    <article class="single-post">
+      <h3 class="h3" itemtype="name">
+        {% if page.date %}<time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string }}</time>
+        {% endif %}{{ page.title }}
+      </h3>
+
+      {{ content }}
+      
+    </article>
+
   </main>
 
   {% include sponsors.html %}

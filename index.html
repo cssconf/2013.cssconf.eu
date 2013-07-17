@@ -28,11 +28,27 @@ contentclass: home
   <div class="copy">
     <h3 class="h3"><span>Host</span> Jed Schmidt</h3>
     <p>
-      Jed is the guy behind projects as diverse as <a href="http://browserver.org" target="_blank">browserver</a>, <a href="http://ramendan.com" target="_blank">ramendan</a>, and <a href="http://140byt.es" target="_blank">140byt.es</a>, and notorious for his entertainer qualities. As CSSconf.eu’s host he will guide you through the programme.
+      Jed is the guy behind projects as diverse as <a href="http://browserver.org" target="_blank">browserver</a>, <a href="http://ramendan.com" target="_blank">ramendan</a>, and <a href="http://140byt.es" target="_blank">140byt.es</a>, and notorious for his entertainer qualities. As CSSconf.eu’s host he will guide you through the program.
     </p>
     <p class="details">
       <a href="https://twitter.com/jedschmidt" target="_blank">@jedschmidt</a>&ensp;|&ensp;<a href="http://jed.is/" target="_blank">jed.is</a>
     </p>
+  </div>
+</article>
+
+<article class="article cfs">
+  <figure class="faces">
+    <!-- These are not the faces you are looking for! But you found a discount code for your CSSconf.eu ticket, curious friend! Enter WHITERABBIT and save EUR 5.00! -->
+  </figure>
+  <div class="copy">
+
+    {% for post in site.tags.news limit: 3 %}
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+        <h3 class="h3">{% if post.date %}<time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>{% endif %}<a href="{{post.url}}" itemtype="name">{{ post.title }}</a></h3>
+        {{ post.excerpt }}
+      </article>
+    {% endfor %}
+
   </div>
 </article>
 
@@ -41,10 +57,10 @@ contentclass: home
     <img src="{{ site.cdn }}/static/img/speakers/alex_saxton.jpg" alt="Alex Saxton" height="500" width="500" />
   </figure>
   <div class="copy">
-    <h3 class="h3"><span>Speaker</span> Alex Saxton</h3>
+    <h3 class="h3"><span>Speaker</span> Alex Sexton</h3>
     <h4 class="h4">Pooping out CSS</h4>
     <p>
-      Just about everyone is using a CSS preprocessor these days. Some like them just for the variables, and others use all the crazy inline functions and whitespace significance features. They're often treated as black boxes. My code goes in, and CSS comes out. This talk will be a deep dive into the digestive tract of your CSS preprocessor. Learn how your original code is parsed and stored, and then how that information is used to generate valid CSS. If there's time, we'll also talk about introducing parasites into your system for some interesting looking results!
+      Just about everyone is using a CSS preprocessor these days. Some like them just for the variables, and others use all the crazy inline functions and whitespace significance features. They’re often treated as black boxes. My code goes in, and CSS comes out. This talk will be a deep dive into the digestive tract of your CSS preprocessor. Learn how your original code is parsed and stored, and then how that information is used to generate valid CSS. If there’s time, we’ll also talk about introducing parasites into your system for some interesting looking results!
     </p>
     <p class="details">
       <a href="https://twitter.com/slexaxton" target="_blank">@slexaxton</a>&ensp;|&ensp;<a href="http://alexsexton.com/" target="_blank">alexsexton.com</a>
@@ -68,22 +84,6 @@ contentclass: home
   </div>
 </article>
 
-<article class="article cfs">
-  <figure class="faces">
-    <!-- These are not the faces you are looking for! But you found a discount code for your CSSconf.eu ticket, curious friend! Enter WHITERABBIT and save EUR 5.00! -->
-  </figure>
-  <div class="copy">
-    <h3 class="h3"><span>Closed!</span>Call for Speakers</h3>
-    <p>
-      Our Call for Speakers closed at midnight on July 15, 2013. <br>
-      Thanks to all your proposals, we’re in the process of reviewing and will announce our speakers as soon as possible!
-    </p>
-    <p>
-      <a href="/call-for-speakers/" class="btn">Call for Speakers</a>
-    </p>
-  </div>
-</article>
-
 <article class="article">
   <figure class="fig">
     <img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:gray|52.532484,13.397325&amp;zoom=17&amp;format=png&amp;sensor=false&amp;size=640x640&amp;maptype=roadmap&amp;style=feature:road|element:geometry|color:0xf1614b|saturation:-27&amp;style=feature:road|element:labels|visibility:on|weight:0.1|color:0x3e120e&amp;style=feature:poi.park|element:geometry|color:0xbfeae2&amp;style=feature:water|element:geometry|color:0x2778b1&amp;style=feature:poi|element:geometry.fill|color:0xbfeae2&amp;style=feature:landscape.natural|element:geometry.fill|color:0xbfeae2&amp;scale=2&amp;key=AIzaSyDJhbXIrkKaTCE5DprEOe9ru2SZPEjt5bo" alt="Map of Berlin Mitte, Villa Elisabeth" />
@@ -91,7 +91,7 @@ contentclass: home
   <div class="copy">
     <h3 class="h3"><span>Berlin!</span>Location</h3>
     <p>
-      CSSconf.eu will be a unique event that focuses on intimacy instead of volume. The historical building of Villa Elisabeth creates the perfect setting. While located in the heart of Berlin and very close to hotels, nightlife, restaurants and the buzzing Mitte district, Villa Elisabeth is a quiet and relaxed gem hidden in a small park.
+      CSSconf.eu will be a unique event that focuses on intimacy instead of volume. The historical building of Villa Elisabeth creates the perfect setting. Located in the heart of Berlin and very close to hotels, nightlife, restaurants and the buzzing Mitte district, Villa Elisabeth is a quiet and relaxed gem hidden in a small park.
     </p>
     <p class="details">
       <a href="//maps.apple.com/?q=Invalidenstr.+3,+10115+Berlin" target="_blank">Villa Elisabeth&ensp;|&ensp;Invalidenstr. 3&ensp;|&ensp;10115 Berlin</a>
@@ -101,13 +101,4 @@ contentclass: home
   </div>
 </article>
 
-<section>
-  <h2 class="h2">News</h2>
-  {% for post in site.tags.news limit: 3 %}
-    <article itemscope itemtype="http://schema.org/BlogPosting">
-      {% if post.date %}<time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>{% endif %}
-      <h3 class="h3"><a href="{{post.url}}" itemtype="name">{{ post.title }}</a></h3>
-      {{ post.excerpt }}
-    </article>
-  {% endfor %}
-</section>
+

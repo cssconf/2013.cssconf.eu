@@ -21,6 +21,13 @@
 
   background-size: 2em 2em, 2em 2em;
   background-position: -2px -2px, -2px -2px;
+  a {
+    color: $color_blue_link;
+    &:hover,
+    &:focus {
+      color: $color_blue_hover;
+    }
+  }
 }
 
 @mixin coloredBlock1 {

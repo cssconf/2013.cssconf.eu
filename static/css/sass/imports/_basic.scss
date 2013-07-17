@@ -39,6 +39,15 @@ nav, h1, h2, h3, h4, h5, h6, .h, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
 }
 .h3 {
   font-size: 1.5em; //21
+  line-height: 1.25;
+}
+.h3, .h4 {
+  span, time {
+    display: block;
+    margin-bottom: .5em;
+    font-size: .5em;
+    @include uppercase;
+  }
 }
 .h4 {
   font-size: 1.1428em; //16
@@ -243,4 +252,16 @@ nav {
 .meta {
   color: $color_text_dark;
   @include uppercase;
+}
+
+
+/* blog / news / posts */
+
+.single-post {
+  border-bottom: 3px solid $color_red;
+  h3 {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 3px solid $color_red;
+  }
 }

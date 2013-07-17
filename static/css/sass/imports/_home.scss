@@ -37,13 +37,6 @@
     > .copy {
       padding: 2em -webkit-calc(50% - 10em);
       padding: 2em calc(50% - 10em);
-      h3 {
-        span {
-          display: block;
-          font-size: .5em;
-          @include uppercase;
-        }
-      }
     }
     &:nth-child(odd) {
       @include coloredBlock1;
@@ -110,6 +103,18 @@
         > .fig {
           img {
             margin: 0 0 0 auto;
+          }
+        }
+      }
+      &.cfs {
+        .copy {
+          @include mq($mq-m){
+            padding-top: 6em;
+            padding-bottom: 6em;
+          }
+          @include mq($mq-l){
+            padding-top: 6em;
+            padding-bottom: 6em;
           }
         }
       }
