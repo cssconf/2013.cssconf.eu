@@ -74,6 +74,7 @@
       > .fig {
         overflow: hidden;
         width: 40%;
+        vertical-align: middle;
         img {
            border-radius: 0;
             max-width: 100%;
@@ -82,12 +83,12 @@
       &:nth-child(odd) {
         direction: rtl;
         > .copy {
-          padding: 2em 3em 2em 4em;
+          padding: 2em 3em 2em 3em;
           @include mq($mq-m){
-            padding: 2em 3em 2em 10em;
+            padding: 2em 3em 2em 6em;
           }
           @include mq($mq-l){
-            padding-left: 16em;
+            padding-left: 8em;
           }
         }
         > .fig {
@@ -98,12 +99,12 @@
       }
       &:nth-child(even) {
         > .copy {
-          padding: 2em 4em 2em 2em;
+          padding: 2em 2em 2em 2em;
           @include mq($mq-m){
-            padding: 2em 6em 2em 3em;
+            padding: 2em 4em 2em 3em;
           }
           @include mq($mq-l){
-            padding-right: 16em;
+            padding-right: 8em;
           }
         }
         > .fig {
