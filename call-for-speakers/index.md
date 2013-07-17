@@ -1,13 +1,11 @@
 ---
-  layout: default
-  title: Call for Speakers – CSSconf.eu
+  layout: post
+  title: Call for Speakers
   description: We are inviting the CSS community to submit proposals for the upcoming CSSConf.eu
   contentclass: md
   previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
 ---
 
-
-### Call for Speakers – Closed
 
 _This Call for Speakers closed on midnight of July 15, 2013 (CEST)._
 

@@ -1,14 +1,12 @@
 ---
-layout: default
-title: Code of Conduct | CSSconf.eu
+layout: post
+title: Code of Conduct
 contentclass: md
 description: A conference dedicated to the designers, developers and engineers who build the world’s most engaging user interfaces.
 previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
 ---
 
   
-### Code of Conduct ### {.h2}
-
 All attendees, speakers, sponsors and volunteers at CSSconf.eu are required to agree with the following code of conduct. Organizers will enforce this code throughout the event. We are expecting coorporation from all participants to help ensuring a safe environment for everybody.
 
 **tl;dr: Don’t be a Jerk**
