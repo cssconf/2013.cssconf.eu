@@ -146,6 +146,9 @@ nav, section, .sitefooter, .intro, article, main.md {
 .cta {
   text-align: center;
   margin-bottom: 6em;
+  .small &{
+    margin-bottom: 0;
+  }
   span {
     display: block;
     max-width: 22em;
