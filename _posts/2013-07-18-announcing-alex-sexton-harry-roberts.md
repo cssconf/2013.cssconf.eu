@@ -22,6 +22,6 @@ We’re amazed by the amount and quality of the proposals we received. Expect mo
   <a href="https://twitter.com/csswizardry" target="_blank">@csswizardry</a> | <a href="http://csswizardry.com/" target="_blank">csswizardry.com</a>
 </p>
 <p>
-  As part of my efforts in writing performant and scalable CSS, I often push back on designs to improve the quality of the resulting code. Users don’t interact with PSDs, they interact with websites, so it’s often better to push back on certain visual flourishes in order to make that code more robust, performant and scalable. In this talk I would discuss some areas I look at, and techniques I employ, in order to deliver better quality code at the cost of altering and pushing back on design.
+  It’s hard to deny that websites need to be well designed; a pleasing UI, a seamless and pleasant UX, and a great personality really encourage users to interact and enjoy using your site, product or service. However, the design is only one part of a finished product; your product is built on code, and oftentimes it is necessary to sacrifice certain aspects of a design in order to keep the codebase itself leaner, faster, and more enjoyable to work with. In this talk Harry aims to share some of his die-hard pragmatic approaches that he employs in order to push back on designs to produce far better quality code.
 </p>
 
