@@ -10,13 +10,21 @@
   <meta property="fb:admins" content="100000951092646" />
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description }}">
+{% if page.layout == 'post' %}
+  <meta name="og:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+{% else %}
+  <meta name="og:description" content="{{ page.description }}" />
+{% endif %}
   <meta property="og:image" content="{{ page.previewImage }}">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta name="twitter:site" content="@CSSConfeu" />
   <meta name="twitter:url" content="{{ site.url }}" />
   <meta name="twitter:title" content="{{ page.title }}" />
+{% if page.layout == 'post' %}
+  <meta name="twitter:description" content="{{ page.excerpt | strip_html | strip_newlines }}" />
+{% else %}
   <meta name="twitter:description" content="{{ page.description }}" />
+{% endif %}
   <meta name="twitter:image" content="{{ page.previewImage }}" />
   {% comment %}
   <link rel="apple-touch-icon" href="{{ site.cdn }}/static/img/favicons/fi_apple_touch_iphone.png" />

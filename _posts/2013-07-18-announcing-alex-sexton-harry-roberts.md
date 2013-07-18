@@ -3,6 +3,7 @@
   title: Announcing First Speakers – Alex Sexton and Harry Roberts
   contentclass: md
   tags: news
+  previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
 ---
 
 We are very happy to confirm our first two speakers: Alex Sexton (<a href="https://twitter.com/slexaxton" target="_blank">@slexaxton</a>) and Harry Roberts (<a href="https://twitter.com/csswizardry" target="_blank">@csswizardry</a>).
