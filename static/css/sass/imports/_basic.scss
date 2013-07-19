@@ -146,7 +146,7 @@ nav, section, .sitefooter, .intro, article, main.md {
 .cta {
   text-align: center;
   margin-bottom: 6em;
-  .small &{
+  .small & {
     margin-bottom: 0;
   }
   span {
@@ -154,11 +154,12 @@ nav, section, .sitefooter, .intro, article, main.md {
     max-width: 22em;
     margin: .75em auto 0;
     font-size: .75em;
-    color: lighten($color_text_dark, 50%);
-    a{
+    color: $color_red;
+    a {
       color: inherit;
-      &:hover{
-        color: $color_text_dark;
+      display: inline-block;
+      &:hover {
+        color: $color_blue;
       }
     }
   }
@@ -217,10 +218,10 @@ input[type='submit'],
     color: $color_white;
   }
   &.inact {
-    background-color: desaturate($color_red, 50%);
+    background-color: $color_mint;
     &:hover,
     &:focus {
-      background-color: desaturate($color_red, 50%);
+      background-color: $color_mint;
       color: $color_white;
     }
   }
