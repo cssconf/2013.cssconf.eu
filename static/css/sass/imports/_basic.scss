@@ -105,9 +105,17 @@ nav, section, .sitefooter, .intro, article, main.md {
 .spnsr-list {
   a {
     display: inline-block;
+    margin: .5em 0 3em;
     &:hover,
     &:focus {
       opacity: .7;
+    }
+    img {
+      width: 100%;
+      max-width: 200px;
+    }
+    .spnsr-l {
+      max-width: 160px;
     }
   }
 }
