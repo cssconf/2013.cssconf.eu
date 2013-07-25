@@ -30,7 +30,7 @@ Sponsors are also subject to the anti-harassment policy. In particular, sponsors
 
 If a participant engages in harassing behavior, the conference organizers may take any action they deem appropriate, including warning the offender or expulsion from the conference with no refund.
 
-If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately. Conference staff can be identified by a grey conference shirt with a rubik’s cube with all pink sides.
+If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of conference staff immediately.
 
 In case you can’t find a staff member, our organizers are always there for you: [@kriesse](https://twitter.com/kriesse) and [@frontdevde](https://twitter.com/frontdevde).
 
