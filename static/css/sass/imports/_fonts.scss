@@ -26,8 +26,8 @@
 /* FacitWeb-Light, italic      */
 @font-face {
   font-family:'FacitWeb-Light';
-  src: local('Facit Lightitalic',
-       url('#{$font-path}Facit/FL-i.ttf')  format('truetype')),
+  src: local('Facit Lightitalic'),
+       url('#{$font-path}Facit/FL-i.ttf')  format('truetype'),
        url('#{$font-path}Facit/FL-i.woff') format('woff');
   font-weight: 300;
   font-style: italic;
