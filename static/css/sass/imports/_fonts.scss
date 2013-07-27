@@ -2,16 +2,16 @@
 @font-face {
   font-family:'FacitWeb-Extralight';
   src: local('Facit Extralight'),
-       url('#{$font-path}/Facit/FXL.ttf')  format('truetype'),
-       url('#{$font-path}/Facit/FXL.woff') format('woff');
+       url('#{$font-path}Facit/FXL.ttf')  format('truetype'),
+       url('#{$font-path}Facit/FXL.woff') format('woff');
   font-weight: 200;
 }
 /* FacitWeb-Extralight, italic */
 @font-face {
   font-family:'FacitWeb-Extralight';
   src: local('Facit Extralightitalic'),
-       url('#{$font-path}/Facit/FXL-i.ttf')  format('truetype'),
-       url('#{$font-path}/Facit/FXL-i.woff') format('woff');
+       url('#{$font-path}Facit/FXL-i.ttf')  format('truetype'),
+       url('#{$font-path}Facit/FXL-i.woff') format('woff');
   font-weight: 200;
   font-style: italic;
 }
@@ -19,16 +19,16 @@
 @font-face {
   font-family:'FacitWeb-Light';
   src: local('Facit Light'),
-       url('#{$font-path}/Facit/FL.ttf')  format('truetype'),
-       url('#{$font-path}/Facit/FL.woff') format('woff');
+       url('#{$font-path}Facit/FL.ttf')  format('truetype'),
+       url('#{$font-path}Facit/FL.woff') format('woff');
   font-weight: 300;
 }
 /* FacitWeb-Light, italic      */
 @font-face {
   font-family:'FacitWeb-Light';
   src: local('Facit Lightitalic',
-       url('#{$font-path}/Facit/FL-i.ttf')  format('truetype')),
-       url('#{$font-path}/Facit/FL-i.woff') format('woff');
+       url('#{$font-path}Facit/FL-i.ttf')  format('truetype')),
+       url('#{$font-path}Facit/FL-i.woff') format('woff');
   font-weight: 300;
   font-style: italic;
 }
@@ -36,16 +36,16 @@
 @font-face {
   font-family:'FacitWeb-Semibold';
   src: local('Facit Semibold'),
-       url('#{$font-path}/Facit/FSB.ttf')  format('truetype'),
-       url('#{$font-path}/Facit/FSB.woff') format('woff');
+       url('#{$font-path}Facit/FSB.ttf')  format('truetype'),
+       url('#{$font-path}Facit/FSB.woff') format('woff');
   font-weight: 500;
 }
 /* FacitWeb-Semibold, italic   */
 @font-face {
   font-family:'FacitWeb-Semibold';
   src: local('Facit Semibolditalic'),
-       url('#{$font-path}/Facit/FSB-i.ttf')  format('truetype'),
-       url('#{$font-path}/Facit/FSB-i.woff') format('woff');
+       url('#{$font-path}Facit/FSB-i.ttf')  format('truetype'),
+       url('#{$font-path}Facit/FSB-i.woff') format('woff');
   font-weight: 500;
   font-style: italic;
 }
@@ -53,16 +53,16 @@
 @font-face {
   font-family:'FacitWeb-Extrabold';
   src: local('Facit Extrabold'),
-       url('#{$font-path}/Facit/FXB.ttf')  format('truetype'),
-       url('#{$font-path}/Facit/FXB.woff') format('woff');
+       url('#{$font-path}Facit/FXB.ttf')  format('truetype'),
+       url('#{$font-path}Facit/FXB.woff') format('woff');
   font-weight: 800;
 }
 /* FacitWeb-Extrabold, italic  */
 @font-face {
   font-family:'FacitWeb-Extrabold';
   src: local('Facit Extrabolditalic'),
-       url('Facit/FXB-i.ttf')  format('truetype'),
-       url('Facit/FXB-i.woff') format('woff');
+       url('#{$font-path}Facit/FXB-i.ttf')  format('truetype'),
+       url('#{$font-path}Facit/FXB-i.woff') format('woff');
   font-weight: 800;
   font-style: italic;
 }
@@ -95,8 +95,8 @@
 @font-face {
   font-family: 'FreightText';
   src: local('FreightText Bold'),
-       url('#{$font-path}/FreightText/freighttextbold.ttf')  format('truetype'),
-       url('#{$font-path}/FreightText/freighttextbold.woff') format('woff');
+       url('#{$font-path}FreightText/freighttextbold.ttf')  format('truetype'),
+       url('#{$font-path}FreightText/freighttextbold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -105,8 +105,8 @@
 @font-face {
   font-family: 'FreightText';
   src: local('FreightText Medium'),
-       url('#{$font-path}/FreightText/freighttextmedium.ttf')  format('truetype'),
-       url('#{$font-path}/FreightText/freighttextmedium.woff') format('woff');
+       url('#{$font-path}FreightText/freighttextmedium.ttf')  format('truetype'),
+       url('#{$font-path}FreightText/freighttextmedium.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -115,8 +115,8 @@
 @font-face {
   font-family: 'FreightText';
   src: local('FreightText MediumItalic'),
-       url('#{$font-path}/FreightText/freighttextmedium.ttf')  format('truetype'),
-       url('#{$font-path}/FreightText/freighttextmediumitalic.woff') format('woff');
+       url('#{$font-path}FreightText/freighttextmedium.ttf')  format('truetype'),
+       url('#{$font-path}FreightText/freighttextmediumitalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
