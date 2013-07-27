@@ -104,7 +104,7 @@ nav, section, .sitefooter, .intro, article, main.md {
 }
 .spnsr-list {
   a {
-    display: inline-block;
+    display: block;
     margin: .5em 0 3em;
     &:hover,
     &:focus {
@@ -115,7 +115,13 @@ nav, section, .sitefooter, .intro, article, main.md {
       max-width: 200px;
     }
     .spnsr-l {
+      max-width: 250px;
+    }
+    .spnsr-m {
       max-width: 160px;
+    }
+    .spnsr-s {
+      max-width: 80px;
     }
   }
 }
