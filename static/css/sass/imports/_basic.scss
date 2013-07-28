@@ -247,6 +247,7 @@ input[type='submit'],
 
 .btn-nav {
   float: right;
+  background-color: $color_mint;
 }
 
 input {
@@ -258,17 +259,23 @@ input {
 nav {
   padding-top: .5em;
   padding-bottom: .5em;
-  background: $color_mint;
+  background: $color_red;
   @include uppercase;
   a {
     display: inline-block;
-    padding: 0 .25em;
+    padding: 0 .5em;
     font-size: .8em;
     color: $color_white;
     &:hover,
     &:focus {
       color: $color_white;
     }
+  }
+  a:first-child {
+    padding-left: 0;
+  }
+  a:nth-child(5) {
+    padding-right: 0;
   }
 }
 
