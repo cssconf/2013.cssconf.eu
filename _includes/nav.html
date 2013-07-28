@@ -1,8 +1,8 @@
 <nav>
-  <a href="/blog">News</a>
-  <a href="/speakers">Speakers</a>
-  <a href="/schedule">Schedule</a>
-  <a href="/information">Information</a>
-  <a href="/sponsorships">Sponsors</a>
-  <a href="https://tito.io/cssconfeu/cssconf-eu" class="btn btn-nav">Buy Ticket</a>
+	<ul>
+	{% for item in page.navitems %}
+		<li data-url="{{ page.url }}" {% if page.url contains item %}class="current"{% endif %}><a href="/{{ item }}/">{{ item }}</a></li> 
+	{% endfor %}
+		<!-- <li><a href="https://tito.io/cssconfeu/cssconf-eu" class="btn btn-nav">Buy Ticket</a></li> -->
+	</ul>
 </nav>
