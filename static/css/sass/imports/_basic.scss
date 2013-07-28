@@ -4,7 +4,6 @@ body {
   line-height: 1.5;
   @include font-serif-mobile;
   letter-spacing: .005em;
-  border-top: 10px solid $color_mint;
   @include perspective(1000px);
   @include mq($mq-s) {
     font-size: 100%;
@@ -128,6 +127,7 @@ nav, section, .sitefooter, .intro, article, main.md {
 
 .siteheader {
   text-align: center;
+  clear: both;
 }
 
 .sitefooter {
@@ -245,6 +245,10 @@ input[type='submit'],
   font-size: 1.5em;
 }
 
+.btn-nav {
+  float: right;
+}
+
 input {
   font-size: 1em;
 }
@@ -254,11 +258,12 @@ input {
 nav {
   padding-top: .5em;
   padding-bottom: .5em;
-  background: $color_red;
+  background: $color_mint;
   @include uppercase;
   a {
     display: inline-block;
     padding: 0 .25em;
+    font-size: .8em;
     color: $color_white;
     &:hover,
     &:focus {

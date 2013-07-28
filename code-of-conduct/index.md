@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Code of Conduct
 contentclass: md
 description: A conference dedicated to the designers, developers and engineers who build the world’s most engaging user interfaces.

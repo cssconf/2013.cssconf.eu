@@ -1,5 +1,5 @@
 ---
-  layout: post
+  layout: default
   title: Call for Speakers
   description: We are inviting the CSS community to submit proposals for the upcoming CSSConf.eu
   contentclass: md
