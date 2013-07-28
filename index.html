@@ -13,10 +13,10 @@ contentclass: home
       Meet our speakers (list should be centered, no figure)
     </p>
     <ul>
-      <li>List</li>
-      <li>of</li>
-      <li>Speakers</li>
-    </ul>
+    {% for post in site.categories.speakers reversed %}
+        <li>{{ post.speakername }}</li>
+    {% endfor %}
+    <ul>
     <a href="/speakers">Link to Speakers Page</a>
   </div>
 </article>
