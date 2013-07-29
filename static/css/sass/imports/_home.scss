@@ -56,6 +56,11 @@
         }
       }
     }
+    &.news{
+      > a{
+        display: block;
+      }
+    }
     @include mq($mq-s) {
       padding: 0;
       .fig,

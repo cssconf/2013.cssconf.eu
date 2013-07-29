@@ -27,16 +27,15 @@ contentclass: home
 </article>
 
 
-<section class="article cfs">
+<section class="article news">
   <div class="copy">
-
-    {% for post in site.tags.news limit: 3 %}
+    {% for post in site.tags.news limit: 2 %}
       <article itemscope itemtype="http://schema.org/BlogPosting">
         <h3 class="h3">{% if post.date %}<time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>{% endif %}<a href="{{post.url}}" itemtype="name">{{ post.title }}</a></h3>
-        {{ post.excerpt }}
+        {{ post.excerpt }}<a href="{{post.url}}">Read more</a>
       </article>
     {% endfor %}
-
+    <a href="/news/">See all news entries</a>
   </div>
 </section>
 
