@@ -45,3 +45,30 @@
     }
   }
 }
+
+
+.speakers-full-list {
+  margin-left: 0;
+  li {
+    clear: both;
+    margin-bottom: 3em;
+    padding-left: 0;
+    list-style: none;
+  }
+  @include mq($mq-m) {
+    margin-bottom: 5em;
+  }
+}
+
+.speaker-img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1.5em auto;
+  @include mq($mq-m) {
+    float: left;
+    margin-right: 2em;
+  }
+}
