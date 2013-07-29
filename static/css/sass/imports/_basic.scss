@@ -88,11 +88,11 @@ nav, section, .sitefooter, .intro, article, main.md {
   padding: 2em -webkit-calc(50% - 10em);
   padding: 2em calc(50% - 10em);
   @include mq($mq-s){
-    padding: 3em -webkit-calc(50% - 16em);
+    padding: 3em -webkit-calc(50% - 18em);
     padding: 3em calc(50% - 16em);
   }
   @include mq($mq-l){
-    padding: 3em -webkit-calc(50% - 18em);
+    padding: 3em -webkit-calc(50% - 20em);
     padding: 3em calc(50% - 18em);
   }
 }
@@ -248,6 +248,10 @@ input[type='submit'],
 .btn-nav {
   float: right;
   background-color: $color_mint;
+  &:hover,
+  &:focus {
+    background-color: $color_mint_hover;
+  }
 }
 
 input {
