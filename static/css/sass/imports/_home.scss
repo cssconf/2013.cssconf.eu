@@ -60,9 +60,19 @@
       @include coloredBlock2;
     }
     &.cfs {
-      @include pattern_grid;
-      .copy {
-        color: $color_blue;
+      background: $color-white;
+      .faces{
+        display: block;
+        margin: 0 auto 55px;
+        border-radius: 50%;
+        @include single-transition(all, .25s, ease-in, 0);
+        &:hover{
+          width: 80%;
+          border-radius: 100% 0%;
+          @include mq($mq-s){
+            width: 40%;
+          }
+        }
       }
       .btn{
         &,
@@ -95,8 +105,11 @@
       .copy{
         margin: 0 auto;
         padding: 2em;
-        width: 50%;
+        width: 80%;
         @include box-sizing(border-box);
+        @include mq($mq-s) {
+          width: 50%;
+        }
       }
     }
     @include mq($mq-s) {
@@ -146,18 +159,6 @@
         .fig {
           img {
             margin: 0 0 0 auto;
-          }
-        }
-      }
-      &.cfs {
-        .copy {
-          @include mq($mq-m){
-            padding-top: 6em;
-            padding-bottom: 6em;
-          }
-          @include mq($mq-l){
-            padding-top: 6em;
-            padding-bottom: 6em;
           }
         }
       }
