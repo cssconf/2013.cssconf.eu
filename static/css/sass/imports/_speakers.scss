@@ -29,9 +29,19 @@
     dt{
       font-weight: bold;
       text-transform: uppercase;
+      @include font-sans-serif;
     }
     dd{
       margin: 0;
+      span{
+        display: block;
+        margin-bottom: 10px;
+        font-size: .9em;
+        @include font-sans-serif;
+      }
+      p{
+        font-weight: lighter;
+      }
     }
   }
 }

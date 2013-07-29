@@ -29,7 +29,7 @@ contentclass: home
 
 <section class="article news">
   <div class="ctr">
-  <h3 class="h3">News</h3>
+    <h3 class="h3">News</h3>
 
     {% for post in site.tags.news limit: 2 %}
       <article itemscope itemtype="http://schema.org/BlogPosting">
@@ -43,20 +43,22 @@ contentclass: home
 </section>
 
 
-<article class="article">
-  <figure class="fig">
-    <img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:gray|52.532484,13.397325&amp;zoom=17&amp;format=png&amp;sensor=false&amp;size=640x640&amp;maptype=roadmap&amp;style=feature:road|element:geometry|color:0xf1614b|saturation:-27&amp;style=feature:road|element:labels|visibility:on|weight:0.1|color:0x3e120e&amp;style=feature:poi.park|element:geometry|color:0xbfeae2&amp;style=feature:water|element:geometry|color:0x2778b1&amp;style=feature:poi|element:geometry.fill|color:0xbfeae2&amp;style=feature:landscape.natural|element:geometry.fill|color:0xbfeae2&amp;scale=2&amp;key=AIzaSyDJhbXIrkKaTCE5DprEOe9ru2SZPEjt5bo" alt="Map of Berlin Mitte, Villa Elisabeth" />
-  </figure>
-  <div class="copy">
-    <h3 class="h3"><span>Location, Travel, Accommodation and everything you want to know</span>Information</h3>
-    <p>
-      CSSconf.eu will be a unique event that focuses on intimacy instead of volume. The historical building of Villa Elisabeth creates the perfect setting. Located in the heart of Berlin and very close to hotels, nightlife, restaurants and the buzzing Mitte district, Villa Elisabeth is a quiet and relaxed gem hidden in a small park.
-    </p>
-    <p class="details">
-      <a href="//maps.apple.com/?q=Invalidenstr.+3,+10115+Berlin" target="_blank">Villa Elisabeth&ensp;|&ensp;Invalidenstr. 3&ensp;|&ensp;10115 Berlin</a>
-      <br />
-      Airport codes: <a href="http://www.berlin-airport.de/en/travellers-txl/" target="_blank">TXL</a> &amp; <a href="http://www.berlin-airport.de/en/travellers-sxf/" target="_blank">SXF</a>
-    </p>
+<article class="article info">
+  <div class="ctr">
+    <h3 class="h3">Information</h3>
+    <figure class="fig">
+      <img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:gray|52.532484,13.397325&amp;zoom=17&amp;format=png&amp;sensor=false&amp;size=640x640&amp;maptype=roadmap&amp;style=feature:road|element:geometry|color:0xf1614b|saturation:-27&amp;style=feature:road|element:labels|visibility:on|weight:0.1|color:0x3e120e&amp;style=feature:poi.park|element:geometry|color:0xbfeae2&amp;style=feature:water|element:geometry|color:0x2778b1&amp;style=feature:poi|element:geometry.fill|color:0xbfeae2&amp;style=feature:landscape.natural|element:geometry.fill|color:0xbfeae2&amp;scale=2&amp;key=AIzaSyDJhbXIrkKaTCE5DprEOe9ru2SZPEjt5bo" alt="Map of Berlin Mitte, Villa Elisabeth" />
+    </figure>
+    <div class="copy">
+      <p>
+        CSSconf.eu will be a unique event that focuses on intimacy instead of volume. The historical building of Villa Elisabeth creates the perfect setting. Located in the heart of Berlin and very close to hotels, nightlife, restaurants and the buzzing Mitte district, Villa Elisabeth is a quiet and relaxed gem hidden in a small park.
+      </p>
+      <p class="details">
+        <a href="//maps.apple.com/?q=Invalidenstr.+3,+10115+Berlin" target="_blank">Villa Elisabeth&ensp;|&ensp;Invalidenstr. 3&ensp;|&ensp;10115 Berlin</a>
+        <br />
+        Airport codes: <a href="http://www.berlin-airport.de/en/travellers-txl/" target="_blank">TXL</a> &amp; <a href="http://www.berlin-airport.de/en/travellers-sxf/" target="_blank">SXF</a>
+      </p>
+    </div>
   </div>
 </article>
 

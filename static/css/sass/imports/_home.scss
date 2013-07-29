@@ -13,13 +13,15 @@
 .home {
   .ctr{
     text-align: center;
-    padding: 2.7em 0 2em;
+    padding: 3em 0;
     margin: 0 auto;
     max-width: 1400px;
   }
   .more{
     display: block;
+    font-size: 1.2em;
     font-weight: bold;
+    @include font-sans-serif;
   }
   .article {
     @include perspective-origin(50%);
@@ -27,6 +29,9 @@
     @include mq($mq-s){
       padding-top: 0;
       padding-bottom: 0;
+    }
+    .h3{
+      margin-bottom: 2em;
     }
     .fig,
     .copy {
@@ -73,6 +78,25 @@
       }
       article{
         text-align: left;
+      }
+    }
+    &.info{
+      background: $color_blue;
+      .fig{
+        @include mq($mq-s){
+          width: 50%;
+          padding: 0 20px;
+          @include box-sizing(border-box);
+        }
+        img{
+          border-radius: 50%;
+        }
+      }
+      .copy{
+        margin: 0 auto;
+        padding: 2em;
+        width: 50%;
+        @include box-sizing(border-box);
       }
     }
     @include mq($mq-s) {
