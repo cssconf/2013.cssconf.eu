@@ -18,11 +18,11 @@
       padding-top: 0;
       padding-bottom: 0;
     }
-    > .fig,
-    > .copy {
+    .fig,
+    .copy {
       @include box-sizing(border-box);
     }
-    > .fig {
+    .fig {
       padding: 0 -webkit-calc(50% - 10em);
       padding: 0 calc(50% - 10em);
       img {
@@ -58,13 +58,13 @@
     }
     @include mq($mq-s) {
       padding: 0;
-      > .fig,
-      > .copy {
+      .fig,
+      .copy {
         display: table-cell;
         width: 60%;
         padding: 0;
       }
-      > .fig {
+      .fig {
         overflow: hidden;
         width: 40%;
         vertical-align: middle;
@@ -75,7 +75,7 @@
       }
       &:nth-child(odd) {
         direction: rtl;
-        > .copy {
+        .copy {
           padding: 2em 3em 2em 3em;
           @include mq($mq-m){
             padding: 2em 3em 2em 6em;
@@ -84,14 +84,14 @@
             padding-left: 8em;
           }
         }
-        > .fig {
+        .fig {
           img {
             margin: 0 auto 0 0;
           }
         }
       }
       &:nth-child(even) {
-        > .copy {
+        .copy {
           padding: 2em 2em 2em 2em;
           @include mq($mq-m){
             padding: 2em 4em 2em 3em;
@@ -100,7 +100,7 @@
             padding-right: 8em;
           }
         }
-        > .fig {
+        .fig {
           img {
             margin: 0 0 0 auto;
           }

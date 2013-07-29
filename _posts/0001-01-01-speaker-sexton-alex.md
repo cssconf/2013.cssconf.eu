@@ -1,6 +1,7 @@
 ---
   categories: speakers
   speakername: Alex Sexton
+  linkname: alex_sexton
   twittername: slexaxton
   website: alexsexton.com
   talktitle: Pooping out CSS

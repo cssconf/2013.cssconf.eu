@@ -8,9 +8,10 @@ previewImage: http://2013.cssconf.eu/img/og/og_image.jpg
 
 
 {% for post in site.categories.speakers reversed %}
-    <h4 class="h4">{{ post.speakername }}: {{ post.talktitle }}</h4>
+    <h4 class="h4" id="{{ post.linkname }}">{{ post.speakername }}: {{ post.talktitle }}</h4>
 	<p class="details">
 	  <a href="https://twitter.com/{{ post.twittername }}" target="_blank">@{{ post.twittername }}</a> | <a href="http://{{ post.website }}/" target="_blank">{{ post.website }}</a>
 	</p>
 	<p>{{ post.talkdescription }}</p>
+	<img src="{{ site.cdn }}/static/img/speakers/{{ post.linkname }}.jpg" alt="{{ post.speakername }}" />
 {% endfor %}

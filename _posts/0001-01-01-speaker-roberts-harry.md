@@ -1,6 +1,7 @@
 ---
   categories: speakers
   speakername: Harry Roberts
+  linkname: harry_roberts
   twittername: csswizardry
   website: csswizardry.com
   talktitle: Normalising designs for better quality CSS

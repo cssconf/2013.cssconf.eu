@@ -6,18 +6,23 @@ previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
 contentclass: home
 ---
 
-<article class="article">
-  <div class="copy">
-    <h3 class="h3"><span>First Announcements</span> Speakers</h3>
-    <p>
-      Meet our speakers (list should be centered, no figure)
-    </p>
-    <ul>
+<article class="article speakers">
+  <div class="ctr">
+    <h3 class="h3">Meet our speakers</h3>
+
     {% for post in site.categories.speakers reversed %}
-        <li>{{ post.speakername }}</li>
+      <a href="/speakers/index.html#{{ post.linkname }}" class="speaker">
+        <img src="{{ site.cdn }}/static/img/speakers/{{ post.linkname }}.jpg" alt="{{ post.speakername }}" />
+        <dl>
+          <dt>{{ post.speakername }}</dt>
+          <dd>
+              <span>@{{ post.twittername }}</span>
+              <p>{{ post.talktitle }}</p>
+          </dd>
+        </dl>
+      </a>
     {% endfor %}
-    <ul>
-    <a href="/speakers">Link to Speakers Page</a>
+    <!-- <a href="/speakers">Link to Speakers Page</a> -->
   </div>
 </article>
 

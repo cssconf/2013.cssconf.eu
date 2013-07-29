@@ -1,0 +1,42 @@
+.home{
+  .ctr{
+    text-align: center;
+    padding: 2em 0;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  .article:nth-child(odd){
+    direction: ltr;
+    a{
+      color: $color-white;
+    }
+  }
+  .speaker{
+    display: inline-block;
+    width: 100%;
+    max-width: 225px;
+    margin: 0 25px 25px;
+    vertical-align: top;
+    color: $color-white;
+    @include mq($mq-l) {
+      max-width: 300px;
+      margin: 0 73px 50px;
+    }
+    > img{
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      @include single-transition(all, .25s, linear, 0);
+      &:hover{
+        -webkit-filter: grayscale(.5);
+      }
+    }
+    dt{
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    dd{
+      margin: 0;
+    }
+  }
+}
