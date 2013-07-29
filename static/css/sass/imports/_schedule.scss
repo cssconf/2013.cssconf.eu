@@ -1,0 +1,38 @@
+.sched{
+  dt{
+    margin: 0 0 10px;
+    font-weight: bold;
+    @include font-sans-serif;
+  }
+  dd{
+    margin: 0 0 50px;
+    padding: 0;
+    > a{
+      display: block;
+    }
+  }
+  table{
+    width: 100%;
+  }
+  thead td{
+    border-width: 4px;
+    font-size: 1.5em;
+    font-weight: bold;
+    @include font-sans-serif;
+  }
+  td{
+    padding: 15px 10px 15px 0;
+    border-bottom: 2px solid $color_red;
+    text-align: center;
+  }
+  .spnsr{
+    display: inline-block;
+    height: 27px;
+    padding: 0;
+    vertical-align: bottom;
+    img{
+      width: 50px;
+      height: auto;
+    }
+  }
+}
