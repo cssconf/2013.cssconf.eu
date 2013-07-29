@@ -87,11 +87,8 @@
           }
         }
       }
-      .btn{
-        &,
-        &:hover{
-          color: $color-white;
-        }
+      .cta{
+        margin-bottom: 2em;
       }
     }
     &.news{
