@@ -4,11 +4,11 @@
     font-weight: bold;
     @include font-sans-serif;
   }
-  dd{
+  dd {
     margin: 0 0 50px;
     padding: 0;
-    > a{
-      display: block;
+    i {
+      font-size: .75em;
     }
   }
   table{
