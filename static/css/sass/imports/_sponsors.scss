@@ -1,0 +1,38 @@
+.spnsr {
+  padding-top: 8em;
+  padding-bottom: 8em;
+  > a,
+  .spnsr-list{
+    display: block;
+    margin: .5em 0 3em;
+    img {
+      width: 100%;
+    }
+  }
+  a{
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+  }
+}
+
+.spnsr-list{
+  li{
+    display: inline-block;
+    margin: 0 50px 0 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: middle;
+  }
+}
+
+.spnsr-l {
+  max-width: 250px;
+}
+.spnsr-m {
+  max-width: 160px;
+}
+.spnsr-s {
+  max-width: 80px;
+}
