@@ -80,6 +80,25 @@
         text-align: left;
       }
     }
+    &.info{
+      background: $color_blue;
+      .fig{
+        @include mq($mq-s){
+          width: 50%;
+          padding: 0 20px;
+          @include box-sizing(border-box);
+        }
+        img{
+          border-radius: 50%;
+        }
+      }
+      .copy{
+        margin: 0 auto;
+        padding: 2em;
+        width: 50%;
+        @include box-sizing(border-box);
+      }
+    }
     @include mq($mq-s) {
       padding: 0;
       .fig,
