@@ -84,7 +84,7 @@ ol {
   }
 }
 
-nav, section, .sitefooter, .intro, article, main.md {
+section, .sitefooter, .intro, article, main.md {
   padding: 2em -webkit-calc(50% - 10em);
   padding: 2em calc(50% - 10em);
   @include mq($mq-s){
@@ -261,18 +261,38 @@ input {
 // nav
 
 nav {
+  position: relative;
   padding-top: .5em;
   padding-bottom: .5em;
   background: $color_red;
+  z-index: 1;
   @include uppercase;
+  ul{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    background: $color_red;
+  }
+  li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 0;
+    padding: 0;
+    &.current{
+      a{
+        color: $color_mint;
+      }
+    }
+  }
   a {
     display: inline-block;
-    padding: 0 .5em;
+    padding: 3px 12px;
     font-size: .8em;
     color: $color_white;
     &:hover,
     &:focus {
-      color: $color_white;
+      color: $color_mint;
     }
   }
   a:first-child {
@@ -280,6 +300,48 @@ nav {
   }
   a:nth-child(5) {
     padding-right: 0;
+  }
+  @media screen and (max-width: 600px) {
+    min-height: 30px;
+    ul{
+      width: 100%;
+      padding: 5px 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 1.25em;
+      &:after{
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 20px;
+        width: 25px;
+        height: 2px;
+        background: white;
+        pointer-events: none;
+        box-shadow: 0 7px 0 white, 0 15px 0 white;
+      }
+      @include box-sizing(border-box);
+      &:hover{
+        li{
+          display: block;
+          margin: 0 0 5px;
+        }
+      }
+    }
+    li{
+      display: none;
+      margin: 0;
+      padding: 0 0 0 10px;
+    }
+    .current{
+      display: block;
+    }
+    a{
+      display: block;
+      padding: 5px 5px 5px 32px;
+      //text-align: left;
+    }
   }
 }
 
