@@ -23,6 +23,19 @@
     font-weight: bold;
     @include font-sans-serif;
   }
+  .comm{
+    padding: 45px 0 35px;
+    font-size: .9em;
+    text-align: center;
+    background: $color_mint;
+    @include font-sans-serif;
+    p{
+      display: block;
+      max-width: 620px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+  }
   .article {
     @include perspective-origin(50%);
     padding: 3em 0;
