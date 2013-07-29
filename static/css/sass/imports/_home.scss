@@ -11,6 +11,16 @@
 }
 
 .home {
+  .ctr{
+    text-align: center;
+    padding: 2.7em 0 2em;
+    margin: 0 auto;
+    max-width: 1400px;
+  }
+  .more{
+    display: block;
+    font-weight: bold;
+  }
   .article {
     @include perspective-origin(50%);
     padding: 3em 0;
@@ -57,8 +67,12 @@
       }
     }
     &.news{
+      background: $color_white;
       > a{
         display: block;
+      }
+      article{
+        text-align: left;
       }
     }
     @include mq($mq-s) {
