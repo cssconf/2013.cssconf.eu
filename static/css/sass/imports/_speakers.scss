@@ -26,6 +26,7 @@
       width: 100%;
       height: auto;
       border-radius: 50%;
+      opacity: .95;
       @include single-transition(all, .25s, linear, 0);
       &:hover{
         -webkit-filter: grayscale(.5);
