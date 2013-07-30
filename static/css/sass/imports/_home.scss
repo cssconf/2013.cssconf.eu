@@ -30,9 +30,6 @@
     background: $color_mint;
     @include font-sans-serif;
     p{
-      display: block;
-      max-width: 620px;
-      margin: 0 auto;
       margin-bottom: 10px;
     }
   }
