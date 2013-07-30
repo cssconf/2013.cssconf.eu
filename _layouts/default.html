@@ -12,7 +12,7 @@ navitems: ["news", "speakers", "schedule"]
 </head>
 
 <body>
-  
+
   {% include nav.html %}
 
   {% include header-small.html %}
@@ -20,6 +20,8 @@ navitems: ["news", "speakers", "schedule"]
   <main {% if page.contentclass %}class="{{ page.contentclass }}"{%endif%}>
     {{ content }}
   </main>
+
+  {% include cta.html %}
 
   {% unless page.url contains "sponsors" %}{% include sponsors.html %}{% endunless %}
 
