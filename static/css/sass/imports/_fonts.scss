@@ -1,37 +1,3 @@
-/* FacitWeb-Extralight         */
-@font-face {
-  font-family:'FacitWeb-Extralight';
-  src: local('Facit Extralight'),
-       url('#{$font-path}Facit/FXL.ttf')  format('truetype'),
-       url('#{$font-path}Facit/FXL.woff') format('woff');
-  font-weight: 200;
-}
-/* FacitWeb-Extralight, italic */
-@font-face {
-  font-family:'FacitWeb-Extralight';
-  src: local('Facit Extralightitalic'),
-       url('#{$font-path}Facit/FXL-i.ttf')  format('truetype'),
-       url('#{$font-path}Facit/FXL-i.woff') format('woff');
-  font-weight: 200;
-  font-style: italic;
-}
-/* FacitWeb-Light              */
-@font-face {
-  font-family:'FacitWeb-Light';
-  src: local('Facit Light'),
-       url('#{$font-path}Facit/FL.ttf')  format('truetype'),
-       url('#{$font-path}Facit/FL.woff') format('woff');
-  font-weight: 300;
-}
-/* FacitWeb-Light, italic      */
-@font-face {
-  font-family:'FacitWeb-Light';
-  src: local('Facit Lightitalic'),
-       url('#{$font-path}Facit/FL-i.ttf')  format('truetype'),
-       url('#{$font-path}Facit/FL-i.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-}
 /* FacitWeb-Semibold           */
 @font-face {
   font-family:'FacitWeb-Semibold';
@@ -40,58 +6,6 @@
        url('#{$font-path}Facit/FSB.woff') format('woff');
   font-weight: 500;
 }
-/* FacitWeb-Semibold, italic   */
-@font-face {
-  font-family:'FacitWeb-Semibold';
-  src: local('Facit Semibolditalic'),
-       url('#{$font-path}Facit/FSB-i.ttf')  format('truetype'),
-       url('#{$font-path}Facit/FSB-i.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-}
-/* FacitWeb-Extrabold          */
-@font-face {
-  font-family:'FacitWeb-Extrabold';
-  src: local('Facit Extrabold'),
-       url('#{$font-path}Facit/FXB.ttf')  format('truetype'),
-       url('#{$font-path}Facit/FXB.woff') format('woff');
-  font-weight: 800;
-}
-/* FacitWeb-Extrabold, italic  */
-@font-face {
-  font-family:'FacitWeb-Extrabold';
-  src: local('Facit Extrabolditalic'),
-       url('#{$font-path}Facit/FXB-i.ttf')  format('truetype'),
-       url('#{$font-path}Facit/FXB-i.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-}
-/*! @license
- * MyFonts Webfont Build ID 2601864, 2013-07-14T12:08:04-0400
- * 
- * The fonts listed in this notice are subject to the End User License
- * Agreement(s) entered into by the website owner. All other parties are 
- * explicitly restricted from using the Licensed Webfonts(s).
- * 
- * You may obtain a valid license at the URLs below.
- * 
- * Webfont: Freight Text Bold by GarageFonts
- * URL: http://www.myfonts.com/fonts/garagefonts/freight-text/bold/
- * 
- * Webfont: Freight Text Medium by GarageFonts
- * URL: http://www.myfonts.com/fonts/garagefonts/freight-text/medium/
- * 
- * Webfont: Freight Text Medium Italic by GarageFonts
- * URL: http://www.myfonts.com/fonts/garagefonts/freight-text/medium-italic/
- * 
- * 
- * License: http://www.myfonts.com/viewlicense?type=web&buildid=2601864
- * Webfonts copyright: Copyright &#xFFA9; 2004, Joshua Darden &amp; Phil's Fonts, Inc. All rights reserved. Published by Garagefonts USA 301-260-2285 www.garagefonts.com
- * 
- * © 2013 MyFonts Inc
-*/
-
-/* @import url("//hello.myfonts.net/count/27b388"); */
 
 @font-face {
   font-family: 'FreightText';
@@ -101,8 +15,8 @@
   font-weight: bold;
   font-style: normal;
 }
- 
-  
+
+
 @font-face {
   font-family: 'FreightText';
   src: local('FreightText Medium'),
@@ -111,8 +25,8 @@
   font-weight: normal;
   font-style: normal;
 }
- 
-  
+
+
 @font-face {
   font-family: 'FreightText';
   src: local('FreightText MediumItalic'),
@@ -121,3 +35,30 @@
   font-weight: normal;
   font-style: italic;
 }
+
+/*! @license
+ * MyFonts Webfont Build ID 2601864, 2013-07-14T12:08:04-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Freight Text Bold by GarageFonts
+ * URL: http://www.myfonts.com/fonts/garagefonts/freight-text/bold/
+ *
+ * Webfont: Freight Text Medium by GarageFonts
+ * URL: http://www.myfonts.com/fonts/garagefonts/freight-text/medium/
+ *
+ * Webfont: Freight Text Medium Italic by GarageFonts
+ * URL: http://www.myfonts.com/fonts/garagefonts/freight-text/medium-italic/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2601864
+ * Webfonts copyright: Copyright &#xFFA9; 2004, Joshua Darden &amp; Phil's Fonts, Inc. All rights reserved. Published by Garagefonts USA 301-260-2285 www.garagefonts.com
+ *
+ * © 2013 MyFonts Inc
+*/
+
+/* @import url("//hello.myfonts.net/count/27b388"); */
