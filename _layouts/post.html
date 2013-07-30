@@ -27,6 +27,10 @@ navitems: ["news", "speakers", "schedule"]
 
       {{ content }}
 
+      <footer class="post-footer">
+        By <a href="{{ page.authorlink }}?rel=author">{{ page.author }}</a> on {{ page.date | date: "%d %B %Y" }}
+      </footer>
+
     </article>
 
   </main>

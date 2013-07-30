@@ -3,6 +3,8 @@
   title: Announcing First Speakers – Alex Sexton and Harry Roberts
   contentclass: md
   tags: news
+  author: Michael P. Pfeiffer
+  authorlink: https://plus.google.com/102394220187795828013
   previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
 ---
 

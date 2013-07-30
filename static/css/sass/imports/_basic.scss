@@ -340,3 +340,7 @@ nav {
     border-bottom: 3px solid $color_red;
   }
 }
+.post-footer {
+  font-size: .75em;
+  @include font-sans-serif;
+}
