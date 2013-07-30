@@ -92,7 +92,7 @@
      padding-right: 0;
     }
     &.news{
-      background: $color_white;
+      @include pattern-grid;
       > a{
         display: block;
       }
