@@ -5,5 +5,5 @@
   twittername: thebabydino
   website: about.me/thebabydino
   talktitle: Maths-powered transforms for creating 3D shapes
-  talkdescription: Transforms are incredibly powerful and immensely helpful when we want to create any kind of polygon starting from humble rectangles. Or when we want to take these polygonal shapes and assemble them into polyhedra. Or even when we want to create various 3D surfaces starting from nothing more than a curvy border.   Transforms are incredibly powerful and immensely helpful when we want to create any kind of polygon starting from humble rectangles. Or when we want to take these polygonal shapes and assemble them into polyhedra. Or even when we want to create various 3D surfaces starting from nothing more than a curvy border. Understanding the mathematical reasoning behind these transforms allows you to achieve wonderful and visually stunning effects. 
+  talkdescription: Transforms are incredibly powerful and immensely helpful when we want to create any kind of polygon starting from humble rectangles. Or when we want to take these polygonal shapes and assemble them into polyhedra. Or even when we want to create various 3D surfaces starting from nothing more than a curvy border. Understanding the mathematical reasoning behind these transforms allows you to achieve wonderful and visually stunning effects. 
 ---
