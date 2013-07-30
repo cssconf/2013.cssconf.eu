@@ -10,6 +10,9 @@
   @include mq($mq-s) {
     padding: 1em 0;
   }
+  span {
+    font-size: 1em;
+  }
   a{
     :nth-child(1n) {
       overflow: hidden;
