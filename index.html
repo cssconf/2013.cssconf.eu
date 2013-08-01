@@ -19,7 +19,7 @@ contentclass: home
         <dl>
           <dt>{{ post.speakername }}</dt>
           <dd>
-              <span>@{{ post.twittername }}</span>
+              {% if post.twittername %}<span>@{{ post.twittername }}</span>{% endif %}
               <p>{{ post.talktitle }}</p>
           </dd>
         </dl>
