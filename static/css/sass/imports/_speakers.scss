@@ -17,11 +17,14 @@
       margin: 0 73px 50px;
     }
     > img{
-      width: 100%;
+      width: 75%;
       height: auto;
       border-radius: 50%;
       opacity: .95;
       @include single-transition(all, .25s, linear, 0);
+      @include mq($mq-s){
+        width: 100%;
+      }
       &:hover{
         -webkit-filter: grayscale(.5);
       }
@@ -68,10 +71,13 @@
 .speaker-img {
   border-radius: 50%;
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
   height: auto;
   display: block;
   margin: 0 auto 1.5em auto;
+  @include mq($mq-s) {
+    max-width: 300px;
+  }
   @include mq($mq-m) {
     max-width: 220px;
     float: left;
