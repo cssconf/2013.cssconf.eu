@@ -1,9 +1,8 @@
 <nav>
-	<ul>
-	<li {% if page.url == "/index.html" %}class="current"{% endif %}><a href="/">Home</a></li> 
-	{% for item in page.navitems %}
-		<li {% if page.url contains item %}class="current"{% endif %}><a href="/{{ item }}/">{{ item }}</a></li> 
-	{% endfor %}
-		<!-- <li><a href="https://tito.io/cssconfeu/cssconf-eu" class="btn btn-nav">Buy Ticket</a></li> -->
-	</ul>
+  <ul>
+  <li {% if page.url == "/index.html" %}class="current"{% endif %}><a href="/">Home</a></li> 
+  {% for item in page.navitems %}
+    <li {% if page.url contains item %}class="current"{% endif %}><a href="/{{ item }}/">{{ item }}</a></li> 
+  {% endfor %}
+  </ul>
 </nav>

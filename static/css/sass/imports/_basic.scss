@@ -225,15 +225,6 @@ input[type='submit'],
   font-size: 1.5em;
 }
 
-.btn-nav {
-  float: right;
-  background-color: $color_mint;
-  &:hover,
-  &:focus {
-    background-color: $color_mint_hover;
-  }
-}
-
 input {
   font-size: 1em;
 }
@@ -254,22 +245,28 @@ nav {
   background: $color_red;
   z-index: 1;
   @include uppercase;
-  ul{
+  ul {
     max-width: $mq-s;
     margin: 0 auto;
     padding: 0;
     text-align: center;
     background: $color_red;
   }
-  li{
+  li {
     display: inline-block;
     list-style: none;
-    margin: 0 5px 0 0;
+    margin: 0 .5em;
     padding: 0;
-    &.current{
-      a{
+    &.current {
+      a {
         color: $color_mint;
       }
+    }
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
     }
   }
   a {
@@ -282,15 +279,9 @@ nav {
       color: $color_mint;
     }
   }
-  a:first-child {
-    padding-left: 0;
-  }
-  a:nth-child(5) {
-    padding-right: 0;
-  }
   @include mq($mq-s,max-width){
     min-height: 30px;
-    ul{
+    ul {
       position: absolute;
       top: 0;
       left: 0;
