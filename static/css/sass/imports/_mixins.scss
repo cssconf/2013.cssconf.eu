@@ -63,14 +63,14 @@
   animation: $anim;
 }
 
-@mixin font-serif{
+@mixin font-serif {
   font-family: 'FreightText', Times New Roman, Georgia, serif;
 }
 
-@mixin font-serif-mobile{
+@mixin font-serif-mobile {
   font-family: Times New Roman, Georgia, serif;
 }
 
-@mixin font-sans-serif{
+@mixin font-sans-serif {
   font-family: FacitWeb-Semibold, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }

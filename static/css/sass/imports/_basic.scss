@@ -6,10 +6,10 @@ body {
   letter-spacing: .005em;
   @include perspective(1000px);
   @include mq($mq-s) {
+    @include font-serif;
     font-size: 100%;
   }
   @include mq($mq-m) {
-    @include font-serif;
     font-size: 112.5%;
   }
   @include mq($mq-l) {
@@ -167,7 +167,6 @@ article, .sitefooter {
 }
 
 
-
 // links
 a {
   outline: none;
@@ -272,7 +271,7 @@ nav {
   }
   a {
     display: inline-block;
-    padding: 3px 12px;
+    padding: .5em 12px;
     font-size: .8em;
     color: $color_white;
     &:hover,
@@ -287,38 +286,38 @@ nav {
       top: 0;
       left: 0;
       width: 100%;
-      padding: 5px 0;
+      padding: .5em 0;
       font-size: 1.25em;
       @include box-sizing(border-box);
-      &:after{
+      &:after {
         $height: 2px;
         content: "";
         position: absolute;
-        top: 12px;
-        right: 20px;
-        width: 25px;
+        top: 1em;
+        right: 1em;
+        width: 1.3em;
+        border-radius: 1px;
         height: $height;
         background: $color_white;
         pointer-events: none;
         box-shadow: 0 3.5*$height 0 $color_white, 0 7*$height 0 $color_white;
       }
-      &:hover{
-        li{
+      &:hover {
+        li {
           display: block;
           margin: 0 0 5px;
         }
       }
     }
-    li{
+    li {
       display: none;
       margin: 0;
     }
-    .current{
+    .current {
       display: block;
     }
-    a{
+    a {
       display: block;
-      padding: 5px 5px 5px 32px;
     }
   }
 }

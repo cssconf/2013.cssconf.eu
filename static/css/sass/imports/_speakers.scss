@@ -1,22 +1,30 @@
 .home{
   .article:nth-child(odd){
     direction: ltr;
-    a{
+    a {
       color: $color-white;
     }
   }
-  .speaker{
+  .speaker {
     display: inline-block;
     width: 100%;
     max-width: 225px;
-    margin: 0 25px 25px;
+    margin: 0 1.5em 1.5em;
     vertical-align: top;
     color: $color-white;
     @include mq($mq-l) {
       max-width: 300px;
       margin: 0 73px 50px;
     }
-    > img{
+    &:hover {
+        img {
+        -webkit-filter: grayscale(0);
+        opacity: 1;
+      }
+    }
+    img {
+      -webkit-filter: grayscale(1);
+      opacity: .8;
       width: 75%;
       height: auto;
       border-radius: 50%;
@@ -25,25 +33,19 @@
       @include mq($mq-s){
         width: 100%;
       }
-      &:hover{
-        -webkit-filter: grayscale(.5);
-      }
     }
-    dt{
+    dt {
       font-weight: bold;
       text-transform: uppercase;
       @include font-sans-serif;
     }
-    dd{
+    dd {
       margin: 0;
-      span{
+      span {
         display: block;
         margin-bottom: 10px;
         font-size: .9em;
         @include font-sans-serif;
-      }
-      p{
-        font-weight: lighter;
       }
     }
   }

@@ -15,7 +15,9 @@ contentclass: home
 
     {% for post in site.categories.speakers reversed %}
       <a href="/speakers/index.html#{{ post.linkname }}" class="speaker">
-        <img src="{{ site.cdn }}/static/img/speakers/{{ post.linkname }}_300.jpg" alt="{{ post.speakername }}" />
+        <p>
+          <img src="{{ site.cdn }}/static/img/speakers/{{ post.linkname }}_300.jpg" alt="{{ post.speakername }}" />
+        </p>
         <dl>
           <dt>{{ post.speakername }}</dt>
           <dd>
