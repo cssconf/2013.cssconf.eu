@@ -14,6 +14,51 @@
     margin: 0 auto 2.5em;
     border: none;
   }
+  dl {
+    border-top: 1px solid $color_mint;
+    border-bottom: 1px solid $color_mint;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    overflow: hidden;
+    @include mq($mq-m) {
+      text-align: left;
+    }
+  }
+  dt {
+    margin-top: 2em;
+    @include mq($mq-m) {
+      float: left;
+      width: 25%;
+      margin: 3em 10% 2em 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  dd {
+    margin-bottom: 2em;
+    @include mq($mq-m) {
+      float: left;
+      width: 64%;
+      margin: 2em 0 2em 0;
+    }
+  }
+  .spnsrs-compact {
+    border-top: 1px solid $color_mint;
+    border-bottom: 1px solid $color_mint;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    a {
+      display: block;
+    }
+    @include mq($mq-m) {
+      text-align: center;
+    }
+  }
   > a{
     display: block;
     margin: 0 0 2.5em;

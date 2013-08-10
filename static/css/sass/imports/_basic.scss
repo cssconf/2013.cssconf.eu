@@ -270,7 +270,7 @@ nav {
     padding: 0;
     &.current {
       a {
-        color: $color_mint;
+        opacity: 1;
       }
     }
     &:first-child {
@@ -284,10 +284,12 @@ nav {
     display: inline-block;
     padding: .5em 12px;
     font-size: .8em;
+    opacity: .8;
     color: $color_white;
     &:hover,
     &:focus {
-      color: $color_mint;
+      opacity: 1;
+      color: $color_white;
     }
   }
   @include mq($mq-s,max-width){
@@ -349,6 +351,10 @@ nav {
     border-bottom: 3px solid $color_red;
   }
 }
+.post-header {
+  text-align: center;
+}
+
 .post-footer {
   font-size: .75em;
   @include font-sans-serif;
