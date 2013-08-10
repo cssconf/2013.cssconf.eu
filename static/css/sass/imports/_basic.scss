@@ -189,6 +189,17 @@ a {
   }
 }
 
+// connect bar (other conferences on landing page, social links on subpages)
+.connect {
+  padding: 45px 0 35px;
+  font-size: .9em;
+  text-align: center;
+  background: $color_mint;
+  @include font-sans-serif;
+  p {
+    margin-bottom: 10px;
+  }
+}
 
 // buttons, forms elements
 
