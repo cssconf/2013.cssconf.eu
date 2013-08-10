@@ -1,19 +1,18 @@
 ---
 layout: default
-title: News | CSSconf.eu
+title: News
 description: A conference dedicated to the designers, developers and engineers who build the world’s most engaging user interfaces.
 previewImage: http://2013.cssconf.eu/img/og/og_image.jpg
 ---
 
 <article>
-  <h1 class="h1">News</h1>
 
-      {% for post in site.tags.news %}
-      <article itemscope itemtype="http://schema.org/BlogPosting">
-        <h3 class="h3">{% if post.date %}<time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>{% endif %}<a href="{{post.url}}" itemtype="name">{{ post.title }}</a></h3>
-        {{ post.excerpt }}
-        <a href="{{post.url}}">Read more</a>
-      </article>
-    {% endfor %}
+  {% for post in site.tags.news %}
+    <article itemscope itemtype="http://schema.org/BlogPosting">
+      <h3 class="h3">{% if post.date %}<time itemprop="datePublished" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>{% endif %}<a href="{{post.url}}" itemtype="name">{{ post.title }}</a></h3>
+      {{ post.excerpt }}
+      <a href="{{post.url}}">Read more</a>
+    </article>
+  {% endfor %}
 
 </article>
