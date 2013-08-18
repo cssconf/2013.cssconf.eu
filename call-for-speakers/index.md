@@ -1,7 +1,7 @@
 ---
   layout: default
   title: Call for Speakers
-  description: We are inviting the CSS community to submit proposals for the upcoming CSSConf.eu
+  description: We are inviting the CSS community to submit proposals for the upcoming CSSconf.eu
   contentclass: md
   previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
 ---
@@ -9,7 +9,7 @@
 
 _This Call for Speakers closed on midnight of July 15, 2013 (CEST)._
 
-We are inviting the CSS community to submit proposals for the upcoming CSSConf.eu (September 13, 2013, Berlin, Germany). 
+We are inviting the CSS community to submit proposals for the upcoming CSSconf.eu (September 13, 2013, Berlin, Germany).
 
 This is what we call a “Hybrid CFS”: If you think you have something great to talk about, tell us all about it and we’ll consider your entry. If you know someone who has something great to talk about, nominate them. And if you are interested in hearing about a particular topic, nominate the topic and we can try to find a match.
 
@@ -96,7 +96,7 @@ We expect many more excellent submissions than we have speaking slots. This proc
 
 > “I would have written a shorter letter, but I did not have the time” — Blaise Pascal
 
-**Original Topics**. One of the things we want to do with CSSConf.eu is push the community forward. We can’t do this if the same people talk about the same things all the time. Thus, we favor original content. If you want to present a topic that you have talked about elsewhere, try to add a twist or new research or development—something to make it unique.
+**Original Topics**. One of the things we want to do with CSSconf.eu is push the community forward. We can’t do this if the same people talk about the same things all the time. Thus, we favor original content. If you want to present a topic that you have talked about elsewhere, try to add a twist or new research or development—something to make it unique.
 
 
 
