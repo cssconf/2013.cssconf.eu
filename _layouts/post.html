@@ -18,10 +18,10 @@ navitems: ["news", "speakers", "schedule", "sponsors"]
   <main {% if page.contentclass %}class="{{ page.contentclass }}" {%endif%}itemscope itemtype="http://schema.org/BlogPosting">
 
     <article class="single-post">
-      <h3 class="h3 post-header" itemtype="name">
+      <h2 class="h2 post-header" itemtype="name">
         {% if page.date %}<time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date_to_long_string }}</time>
         {% endif %}{{ page.title }}
-      </h3>
+      </h2>
 
       {{ content }}
 

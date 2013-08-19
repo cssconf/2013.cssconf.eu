@@ -1,4 +1,4 @@
-.home{
+.home {
   .article:nth-child(odd){
     direction: ltr;
     a {
@@ -56,16 +56,20 @@
   margin-left: 0;
   li {
     clear: both;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     padding-left: 0;
     list-style: none;
-    padding-bottom: 2em;
     border-bottom: 1px solid $color-mint;
     h4, .details {
       text-align: center;
     }
+    h4 {
+      font-size: 1em;
+    }
     @include mq($mq-m) {
       overflow: hidden;
+      margin-bottom: 3em;
+      padding-bottom: 2em;
       h4 {
         margin-top: 0;
       }
@@ -75,20 +79,18 @@
 
 .speaker-img {
   border-radius: 50%;
-  width: 100%;
-  max-width: 200px;
+  width: 30%;
+  max-width: 300px;
   height: auto;
-  display: block;
-  margin: 0 auto 1.5em auto;
-  @include mq($mq-s) {
-    max-width: 300px;
-  }
-  @include mq($mq-m) {
-    max-width: 220px;
-    float: left;
-    margin-right: 2em;
-  }
-  @include mq($mq-l) {
-    max-width: 300px;
-  }
+  display: inline-block;
+  margin-bottom: 1.5em;
+  vertical-align: middle;
+}
+
+.speaker-header {
+  overflow: hidden;
+  display: inline-block;
+  margin-left: 5%;
+  width: 63%;
+  vertical-align: middle;
 }

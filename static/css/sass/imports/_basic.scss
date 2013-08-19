@@ -42,12 +42,13 @@ nav, h1, h2, h3, h4, h5, h6, .h, .h1, .h2, .h3, .h4, .h5, .h6, .btn {
 }
 .h2 {
   font-size: 2em; //28
+  line-height: 1.25;
 }
 .h3 {
   font-size: 1.5em; //21
   line-height: 1.25;
 }
-.h3, .h4 {
+.h2, .h3, .h4 {
   span, time {
     display: block;
     margin-bottom: .5em;
@@ -93,11 +94,11 @@ ol {
 
 
 section, .sitefooter, .intro, article, main.md {
-  padding: 2em -webkit-calc(50% - 10em);
-  padding: 2em calc(50% - 10em);
+  padding: 1em -webkit-calc(50% - 10em);
+  padding: 1em calc(50% - 10em);
   @include mq($mq-s){
-    padding: 3em -webkit-calc(50% - 18em);
-    padding: 3em calc(50% - 16em);
+    padding: 2em -webkit-calc(50% - 18em);
+    padding: 2em calc(50% - 16em);
   }
   @include mq($mq-l){
     padding: 3em -webkit-calc(50% - 20em);
@@ -345,12 +346,23 @@ nav {
 
 .single-post {
   border-bottom: 3px solid $color_red;
-  h3 {
+  h2 {
     margin-bottom: 1em;
     padding-bottom: 1em;
     border-bottom: 3px solid $color_red;
   }
 }
+.preview-post {
+  clear: both;
+  margin-bottom: 2em;
+  padding-left: 0;
+  border-bottom: 1px solid $color-mint;
+  @include mq($mq-m) {
+    margin-bottom: 3em;
+    padding-bottom: 2em;
+  }
+}
+
 .post-header {
   text-align: center;
 }

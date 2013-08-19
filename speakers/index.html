@@ -10,10 +10,12 @@ previewImage: http://2013.cssconf.eu/img/og/og_image.jpg
 {% for post in site.categories.speakers reversed %}
   <li>
     <img src="{{ site.cdn }}/static/img/speakers/{{ post.linkname }}_300.jpg" alt="{{ post.speakername }}" class="speaker-img" />
-    <h4 class="h4" id="{{ post.linkname }}">{{ post.speakername }}: {{ post.talktitle }}</h4>
-    <p class="details">
-      {% if post.twittername %}<a href="https://twitter.com/{{ post.twittername }}" target="_blank">@{{ post.twittername }}</a> |{% endif %} {% if post.website %}<a href="http://{{ post.website }}/" target="_blank">{{ post.website }}</a>{% endif %} 
-    </p>
+    <header class="speaker-header">
+      <h4 class="h4" id="{{ post.linkname }}">{{ post.speakername }}: {{ post.talktitle }}</h4>
+      <p class="details">
+        {% if post.twittername %}<a href="https://twitter.com/{{ post.twittername }}" target="_blank">@{{ post.twittername }}</a> |{% endif %} {% if post.website %}<a href="http://{{ post.website }}/" target="_blank">{{ post.website }}</a>{% endif %} 
+      </p>
+    </header>
     <p>{{ post.talkdescription }}</p>
   </li>
 {% endfor %}
