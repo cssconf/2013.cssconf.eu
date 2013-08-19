@@ -8,8 +8,8 @@
   previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
 ---
 
-We are very happy to confirm our first two speakers: Alex Sexton (<a href="https://twitter.com/slexaxton" target="_blank">@slexaxton</a>) and Harry Roberts (<a href="https://twitter.com/csswizardry" target="_blank">@csswizardry</a>).
-We’re amazed by the amount and quality of the proposals we received. Expect more additions to the line-up soon!
+<p>We are very happy to confirm our first two speakers: Alex Sexton (<a href="https://twitter.com/slexaxton" target="_blank">@slexaxton</a>) and Harry Roberts (<a href="https://twitter.com/csswizardry" target="_blank">@csswizardry</a>).
+We’re amazed by the amount and quality of the proposals we received. Expect more additions to the line-up soon!</p>
 
 <h4 class="h4">Alex Sexton: Pooping out CSS</h4>
 <p class="details">
