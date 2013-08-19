@@ -17,9 +17,9 @@ navitems: ["news", "speakers", "schedule", "sponsors"]
 
   {% include header-small.html %}
 
-  <main {% if page.contentclass %}class="{{ page.contentclass }}"{%endif%}>
+  <article {% if page.contentclass %}class="{{ page.contentclass }}"{%endif%}>
     {{ content }}
-  </main>
+  </article>
 
   {% include cta.html %}
 
