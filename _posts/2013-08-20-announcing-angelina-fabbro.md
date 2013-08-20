@@ -8,7 +8,7 @@
   previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
 ---
 
-We’re excited to announce Angelina Fabbro as a speaker at CSSconf.eu! Her talk will explore where CSS is headed, take a look back at the history of the spec and forward to the exciting new features that are on the horizon. Angelina is a developer from Vancouver, BC Canada and works at Mozilla as a Technical Evangelist and developer advocate for Firefox OS. 
+We’re excited to announce Angelina Fabbro as a speaker at CSSconf.eu! Her talk will explore where CSS is headed, take a look back at the history of the spec and forward to the exciting new features that are on the horizon. Angelina is a developer from Vancouver, Canada and works at Mozilla as a technical evangelist and developer advocate for Firefox OS.
 
 If you haven’t seen it yet, also check out her great talk <a href="http://www.youtube.com/watch?v=JNjnv-Gcpnw">Inspector Web and the Mystery of the Shadow DOM</a> from last year’s JSconf.eu.
 
