@@ -5,7 +5,7 @@
   tags: news
   author: Kristina Schneider
   authorlink: https://plus.google.com/106785064163240715797
-  previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
+  previewImage: http://2013.cssconf.eu/static/img/speakers/angelina_fabbro_300.jpg
 ---
 
 We’re excited to announce Angelina Fabbro as a speaker at CSSconf.eu! Her talk will explore where CSS is headed, take a look back at the history of the spec and forward to the exciting new features that are on the horizon. Angelina is a developer from Vancouver, Canada and works at Mozilla as a technical evangelist and developer advocate for Firefox OS.
