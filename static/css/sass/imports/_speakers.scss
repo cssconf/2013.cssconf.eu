@@ -6,15 +6,38 @@
     }
   }
   .speaker {
-    display: inline-block;
+    display: block;
     width: 100%;
-    max-width: 225px;
-    margin: 0 1.5em 1.5em;
-    vertical-align: top;
     color: $color-white;
+    > p {
+      width: 30%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    > dl {
+      width: 60%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+    }
+    @include mq($mq-s) {
+      display: inline-block;
+      max-width: 205px;
+      margin: 0 1.5em 1.5em;
+      vertical-align: top;
+      > p {
+        width: 100%;
+        display: block;
+      }
+      > dl {
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+    }
     @include mq($mq-l) {
       max-width: 300px;
-      margin: 0 73px 50px;
+      margin: 0 3em 2.5em;
     }
     &:hover {
         img {
@@ -26,11 +49,13 @@
       -webkit-filter: grayscale(1);
       opacity: .8;
       width: 75%;
+      max-width: 80px;
       height: auto;
       border-radius: 50%;
       opacity: .95;
       @include single-transition(all, .25s, linear, 0);
       @include mq($mq-s){
+        max-width: 300px;
         width: 100%;
       }
     }
@@ -42,10 +67,12 @@
     dd {
       margin: 0;
       span {
-        display: block;
-        margin-bottom: 10px;
-        font-size: .9em;
         @include font-sans-serif;
+        display: block;
+        font-size: .857em;
+        @include mq($mq-s) {
+          margin-bottom: 1em;
+        }
       }
     }
   }

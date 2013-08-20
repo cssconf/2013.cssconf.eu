@@ -90,17 +90,17 @@
         text-align: left;
       }
     }
-    &.info{
+    &.info {
       background: $color_blue;
       padding-left: 0;
       padding-right: 0;
-      .fig{
+      .fig {
         @include mq($mq-s){
-          width: 50%;
-          padding: 0 20px;
+          width: 40%;
+          padding: 0 5%;
           @include box-sizing(border-box);
         }
-        img{
+        img {
           border-radius: 50%;
         }
       }
