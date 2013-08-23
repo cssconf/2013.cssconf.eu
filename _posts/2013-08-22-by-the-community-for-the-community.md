@@ -4,7 +4,7 @@
   contentclass: md
   tags: news
   author: Lena Reinhard
-  authorlink: https://plus.google.com/113675069839950058730/
+  authorlink: https://plus.google.com/100107340716019340476/
   previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
 ---
 
