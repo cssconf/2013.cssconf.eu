@@ -1,6 +1,6 @@
 ---
   layout: post
-  title: By the community, for the community - more events around CSSConf.eu
+  title: By the community, for the community - more events around CSSconf.eu
   contentclass: md
   tags: news
   author: Lena Reinhard
