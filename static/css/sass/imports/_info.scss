@@ -6,7 +6,8 @@
   }
   .h3 {
     color: $color_red;
-    margin-bottom: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
   }
   section {
     padding-top: 3em;
@@ -16,7 +17,6 @@
     @include coloredBlock2;
   }
   .section-transport {
-    @include pattern-grid;
   }
   .section-acc {
     @include coloredBlock2;
@@ -63,6 +63,6 @@
 
     width: 45%;
 
-    border-bottom: 3px solid $color-red;
+    border-bottom: 3px solid $color-mint;
   }
 }
