@@ -1,0 +1,68 @@
+
+.info {
+  padding: 0;
+  .h2, .h3 {
+    text-align: center;
+  }
+  .h3 {
+    color: $color_red;
+    margin-bottom: 2em;
+  }
+  section {
+    padding-top: 3em;
+    padding-bottom: 3em;
+  }
+  .section-date {
+    @include coloredBlock2;
+  }
+  .section-transport {
+    @include pattern-grid;
+  }
+  .section-acc {
+    @include coloredBlock2;
+  }
+  .section-party {
+    @include pattern-stars;
+    padding-top: 4em;
+    padding-bottom: 6em;
+    h2, p {
+      background: $color_blue;
+      margin: -1em;
+      padding: 1em;
+    }
+    .h3 {
+      color: $color_mint;
+    }
+  }
+  .section-events {
+    @include pattern-grid;
+  }
+}
+
+
+
+.flex-container {
+  padding: 0;
+  margin: 0 0 1.5em 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-between;
+
+
+  > div {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 45%;
+
+    border-bottom: 3px solid $color-red;
+  }
+}
