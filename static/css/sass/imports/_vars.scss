@@ -2,9 +2,9 @@
 $color_white      : #FFF;
 $color_black      : #000;
 $color_darkgray   : #171717;
-$color_blue       : #2777B1;
-$color_blue_link  : lighten(saturate($color_blue, 50%), 10%);
-$color_blue_hover : lighten(saturate($color_blue, 80%), 20%);
+$color_blue       : #255688;
+$color_blue_link  : lighten(saturate($color_blue, 10%), 20%);
+$color_blue_hover : lighten(saturate($color_blue, 50%), 20%);
 $color_red        : #F1614B;
 $color_red_hover  : #FF7A53;
 $color_mint       : #BFEAE2;
