@@ -6,27 +6,38 @@
   }
   .h3 {
     color: $color_red;
-    margin-top: 3em;
-    margin-bottom: 3em;
   }
   section {
     padding-top: 3em;
     padding-bottom: 3em;
+    @include mq($mq-m) {
+      padding-top: 4.5em;
+      padding-bottom: 4.5em;
+    }
   }
   .section-date {
     @include coloredBlock2;
+    background-image: url('/static/img/venue.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: 50%;
+    text-shadow: 0px 1px 3px $color-mint;
   }
   .section-transport {
+    h3 {
+      margin-top: 3em;
+      margin-bottom: 2em;
+    }
   }
   .section-acc {
     @include coloredBlock2;
   }
   .section-party {
     @include pattern-stars;
-    padding-top: 4em;
-    padding-bottom: 6em;
-    h2, p {
-      background: $color_blue;
+    padding-top: 6em;
+    padding-bottom: 8em;
+    .h2, .h3, p {
+      background-color: $color_blue;
       margin: -1em;
       padding: 1em;
     }
@@ -37,32 +48,49 @@
   .section-events {
     @include pattern-grid;
   }
+  .section-berlin {
+    @include coloredBlock2;
+    margin-bottom: 4.5em;
+  }
 }
 
 
+@include mq($mq-xs) {
+  .flex-container {
+    padding: 0;
+    margin: 0 0 1.5em 0;
+    list-style: none;
 
-.flex-container {
-  padding: 0;
-  margin: 0 0 1.5em 0;
-  list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-flow: row wrap;
-  justify-content: space-between;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
 
 
-  > div {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    > div {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
 
-    width: 45%;
+      width: 45%;
 
-    border-bottom: 3px solid $color-mint;
+      border-bottom: 3px solid $color-mint;
+    }
+  }
+}
+
+
+.list-hotels {
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: .25em;
+    padding: .25em .75em;
+    background-color: $color_white;
+    border-radius: 1em;
   }
 }
