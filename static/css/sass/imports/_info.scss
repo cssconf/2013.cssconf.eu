@@ -89,8 +89,15 @@
   li {
     display: inline-block;
     margin: .25em;
-    padding: .25em .75em;
+  }
+  a {
+    display: block;
+    padding: .3em .75em .25em .75em;
     background-color: $color_white;
     border-radius: 1em;
+    span {
+      font-size: .75em;
+      font-style: italic;
+    }
   }
 }
