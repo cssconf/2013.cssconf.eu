@@ -5,7 +5,7 @@
   tags: news
   author: Lena Reinhard
   authorlink: https://plus.google.com/100107340716019340476/
-  previewImage: http://2013.cssconf.eu/static/img/such-a-shame/og_img.png
+  previewImage: http://2013.cssconf.eu/static/img/og_img_berlin.png
 ---
 
 Want to take the chance and spend some days in Germany’s lovely capital? Here’s some information on things to explore, places to visit and food to eat during your stay.
@@ -76,7 +76,7 @@ You’ll find all of them <a href="https://de.foursquare.com/_miel/list/cssconfe
 <h3 class="h3">Lunch spots</h3>
 
 <p>
-  For some “proper” dinner after a long day in town, try one of these locations:
+  For a proper meal after a long day in town, try one of these locations:
 </p>
 
 <ul class="list-post">
