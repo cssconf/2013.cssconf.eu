@@ -79,6 +79,17 @@
   linear-gradient(144deg, $color_mint_hover 7.5%, transparent 7.5%) 80px 73px;
   background-color: $color_blue;
   background-size: 100px 100px;
+
+
+  position: relative;
+  small {
+    font-size: .5em;
+    font-style: italic;
+    position: absolute;
+    bottom: 1em;
+    right: .5em;
+    background-color: $color_blue;
+  }
 }
 
 
