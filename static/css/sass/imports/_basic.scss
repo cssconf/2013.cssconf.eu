@@ -116,8 +116,21 @@ section, .sitefooter, .intro, article, main.md {
 
 
 .siteheader {
+  position: relative;
+  padding-bottom: 8em;
   text-align: center;
   clear: both;
+  .cta{
+    margin-bottom: 0;
+  }
+  .illu{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+  }
 }
 
 .sitefooter {
