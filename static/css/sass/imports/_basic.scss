@@ -120,6 +120,9 @@ section, .sitefooter, .intro, article, main.md {
   padding-bottom: 8em;
   text-align: center;
   clear: both;
+  &.small{
+    padding-bottom: 0;
+  }
   .cta{
     margin-bottom: 0;
   }
