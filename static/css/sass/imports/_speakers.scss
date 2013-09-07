@@ -121,3 +121,63 @@
   width: 63%;
   vertical-align: middle;
 }
+
+
+/* speakers-guide */
+
+.guide{
+  padding-top: 0;
+  .h3{
+    margin-top: 2em;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  .speakerimgs{
+    margin-bottom: 25px;
+    text-align: center;
+    img{
+      width: 14%;
+      margin: 5px;
+    }
+  }
+  .team{
+    text-align: center;
+    > li{
+      display: inline-block;
+      li{
+        list-style-type: none;
+        margin-bottom: 0;
+      }
+    }
+    img{
+      border-radius: 50%;
+    }
+  }
+  .venue{
+    .h5{
+      margin-bottom: 15px;
+    }
+    img{
+      display: inline-block;
+      width: 45%;
+      height: auto;
+      margin: 5px;
+      border-radius: 50%;
+      @include mq($mq-s) {
+        width: 30%;
+      }
+    }
+  }
+  .party{
+    vertical-align: top;
+    strong{
+      vertical-align: top;
+    }
+    img{
+      width: 50px;
+      height: auto;
+      margin: 0 5px;
+    }
+  }
+}

@@ -3,42 +3,79 @@ layout: default
 title: Speakers’ Guide
 description: A conference dedicated to the designers, developers and engineers who build the world’s most engaging user interfaces.
 previewImage: http://2013.cssconf.eu/img/og/og_image.jpg
-contentclass: md
+contentclass: md guide
 ---
 
 <article>
 
+
+  <h3 class="h3">Dear Speakers of CSSconf.eu,</h3>
   <p>
-    Dear Speakers of CSSconf.eu,
-    <br><br>
     This site is to help make your travels and your stay in Berlin as smooth as possible. Please let us know if we forgot to address any questions, and contact us any time if you need help or assistance!
   </p>
+  <div class="speakerimgs">
+    {% for post in site.categories.speakers reversed %}
+    <img src="{{ site.cdn }}/static/img/speakers/{{ post.linkname }}_300.jpg" alt="{{ post.speakername }}" class="speaker-img" />
+    {% endfor %}
+  </div>
 
-  <h3>Your Hotel</h3>
-  <p>
-    <a href="http://www.the-weinmeister.com/" target="_blank">The Weinmeister <span>10 min walk</span></a>
-  </p>
+  <h3 class="h3">The team, we'll help!</h3>
+  <p> If you have any questions or requests always feel free to ask! As we as organizers might at times be busy our friend Minja will act as your contact person during the event and in the days leading up to it. She will be able to assist you with the questions/request you might have! </p>
+  <ul class="team">
+    <li>
+      <img src="{{ site.cdn }}/static/img/team/minja.jpg" />
+      <ul>
+        <li>Minja (<a href="https://twitter.com/Minja" target="_blank">@Minja</a>)</li>
+        <li>mobile tba</li>
+        <li>minja@toenig.es</li>
+      </ul>
+    </li>
+    <li>
+      <img src="{{ site.cdn }}/static/img/team/michael.jpg" />
+      <ul>
+        <li>Michael (<a href="https://twitter.com/frontdevde" target="_blank">@frontdevde</a>)</li>
+        <li>+49 15125234774</li>
+        <li>michael@cssconf.eu</li>
+      </ul>
+    </li>
+    <li>
+      <img src="{{ site.cdn }}/static/img/team/kristina.jpg" />
+      <ul>
+        <li>Kristina (<a href="https://twitter.com/kriesse" target="_blank">@kriesse</a>)</li>
+        <li>+49 1605992019</li>
+        <li>kristina@cssconf.eu</li>
+      </ul>
+    </li>
+  </ul>
 
-  <h3>The conference venue</h3>
-  <p>Villa Elisabeth</p>
-  <p>
-    <a href="//maps.apple.com/?q=Invalidenstr.+3,+10115+Berlin" target="_blank">Villa Elisabeth&ensp;|&ensp;Invalidenstr. 3&ensp;|&ensp;10115 Berlin</a>
-  </p>
+  <h3 class="h3">Your Hotel</h3>
+  <div class="venue">
+    <a href="http://www.the-weinmeister.com/" target="_blank">
+      <h4 class="h5">The Weinmeister&ensp;|&ensp;Weinmeisterstr. 2&ensp;|&ensp;10178 Berlin</h4>
+      <img src="{{ site.cdn }}/static/img/other/weinmeister.jpg">
+      <img src="{{ site.cdn }}/static/img/other/weinmeister2.jpg">
+      <img src="{{ site.cdn }}/static/img/other/weinmeister3.jpg">
+    </a>
+  </div>
 
-  <h3>Party Location</h3>
-  <p>
-    Address?
-    <a href="www.beachberlin-events.de" target="_blank">BeachMitte</a>
-  </p>
-
-  <h3>Reimbursements</h3>
+  <h3 class="h3">Reimbursements</h3>
   <p>
     We will reimburse you for any travel related costs -
-    taxi will be paid upon arrival by hotel reception -
-    If we agreed you company ays - great!
+    taxi will be paid upon arrival by hotel reception.
+    If your company has agreed to pay - great!
   </p>
 
-  <h3>Technical information and conference schedule</h3>
+  <h3 class="h3">The conference venue</h3>
+  <div class="venue">
+    <a href="//maps.apple.com/?q=Invalidenstr.+3,+10115+Berlin" target="_blank">
+      <h4 class="h5">Villa Elisabeth&ensp;|&ensp;Invalidenstr. 3&ensp;|&ensp;10115 Berlin</h4>
+      <img src="{{ site.cdn }}/static/img/other/venue.jpg">
+      <img src="http://maps.googleapis.com/maps/api/staticmap?markers=color:gray|52.532484,13.397325&zoom=17&format=png&sensor=false&size=340x340&maptype=roadmap&style=feature:road|element:geometry|color:0xf1614b|saturation:-27&style=feature:road|element:labels|visibility:on|weight:0.1|color:0x3e120e&style=feature:poi.park|element:geometry|color:0xbfeae2&style=feature:water|element:geometry|color:0x2778b1&style=feature:poi|element:geometry.fill|color:0xbfeae2&style=feature:landscape.natural|element:geometry.fill|color:0xbfeae2&scale=2&key=AIzaSyDJhbXIrkKaTCE5DprEOe9ru2SZPEjt5bo">
+      <img src="{{ site.cdn }}/static/img/other/venue2.jpg">
+    </a>
+  </div>
+
+  <h3 class="h3">Technical information and conference schedule</h3>
   <ul>
     <li>The day will start at 9am with the registration, talks will start around 10am. It’d be good if you can be there before 10am, so we can setup your laptop for a test run to make sure everything works.</li>
 
@@ -61,40 +98,28 @@ contentclass: md
 
   </ul>
 
-  <h3>Talk to us! We'll help!</h3>
-  <ul>
-    <li>
-      Michael P. Pfeiffer
-      <a href="http://twitter.com/frontdevde">@frontdevde</a>
-      mpp@frontend-development.de
-
-    </li>
-    <li>
-      Kristina Schneider
-      <a href="http://twitter.com/kriesse">@kriesse</a>
-      kristina@cssconf.eu
-    </li>
-    <li>
-      Minja Töniges
-      minja@toenig.es
-    </li>
-  </ul>
-
-  <h3>Stuff to do, fringe events</h3>
+  <h3 class="h3">Stuff to do, fringe events</h3>
   <p>
-    <strong>Wednesday</strong>: For those of you arriving early, the first opportunity to get together is at gin.js, a pre-event for all speakers and organizers of Reject.JS, JSconf EU and CSSconf.eu.
+    <strong>Wednesday</strong>: For those of you arriving early, the first opportunity to get together is at <strong>gin.js</strong>, a pre-event for all speakers and organizers of Reject.JS, JSconf EU and CSSconf.eu. By the time you read this you should have received detailed information via email. In case not please let us know: contact@cssconf.eu!
   </p>
   <p>
-    <strong>Thursday</strong>: In the evening, we will …??? Pre-Event?
+    <strong>Thursday</strong>: Pre-Event, tba
   </p>
-  <p>
-    Friday: After-Party!
+  <p class="party">
+    <strong>Friday:</strong> CSSconf.eu's <a href="http://andyet.com/" target="_blank" class="spnsr"><img src="{{ site.cdn }}/static/img/logos/lg_andyet.svg" alt="&amp;yet" /></a>Party!
   </p>
 
-  <h3>Anti-jerk Policy</h3>
-  <p>One last, but very important point: We’re an inclusive community and our goal is to broaden the community and to be a place for everyone to make new friends, share knowledge, learn new stuff, get excited and gain insights. No matter which skin color, gender, sexual preference or whatever. We’re all in the same community and we want it to be awesome and welcoming – Should you encounter or observe any form of harrassment, please let us know and we’ll take care of it</p>
+  <h3 class="h3">Party Location</h3>
+  <div class="venue">
+    <a href="http://www.beachberlin-events.de/BeachBar-Mitte" target="_blank">
+      <h4 class="h5">BeachMitte&ensp;|&ensp;Caroline-Michaelis-Str. 8&ensp;|&ensp;10115 Berlin</h4>
+      <img src="{{ site.cdn }}/static/img/other/beachmitte.jpg">
+      <img src="{{ site.cdn }}/static/img/other/beachmitte2.jpg">
+      <img src="{{ site.cdn }}/static/img/other/beachmitte3.jpg">
+    </a>
+  </div>
 
-
-
+  <h3 class="h3">Anti-jerk Policy</h3>
+  <p>One last, but very important point: We’re an inclusive community and our goal is to broaden the community and to be a place for everyone to make new friends, share knowledge, learn new stuff, get excited and gain insights. No matter which skin color, gender, sexual preference or whatever. We’re all in the same community and we want it to be awesome and welcoming – Should you encounter or observe any form of harrassment, please let us know and we’ll take care of it!</p>
 
 </article>
