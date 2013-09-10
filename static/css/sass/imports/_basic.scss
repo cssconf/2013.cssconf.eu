@@ -397,3 +397,32 @@ nav {
   font-size: .75em;
   @include font-sans-serif;
 }
+
+.triplet{
+  display: block;
+  margin-bottom: 20px;
+  img{
+    display: inline-block;
+    width: 45%;
+    height: auto;
+    margin: 5px;
+    border-radius: 50%;
+    @include mq($mq-s) {
+      width: 30%;
+    }
+  }
+}
+
+.nd{
+  vertical-align: top;
+  .spnsr{
+    display: inline-block;
+    width: 40px;
+    margin: 0 3px;
+    img{
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+}
