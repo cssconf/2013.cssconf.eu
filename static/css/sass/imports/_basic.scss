@@ -94,21 +94,26 @@ ol {
 
 
 section, .sitefooter, .intro, article, main.md {
+  padding: 1em;
   padding: 1em -webkit-calc(50% - 10em);
   padding: 1em calc(50% - 10em);
   @include mq($mq-xs){
+    padding: 2em;
     padding: 2em -webkit-calc(50% - 14em);
     padding: 2em calc(50% - 14em);
   }
   @include mq($mq-s){
+    padding: 2em;
     padding: 2em -webkit-calc(50% - 20em);
     padding: 2em calc(50% - 20em);
   }
   @include mq($mq-m){
+    padding: 2em;
     padding: 2em -webkit-calc(50% - 22em);
     padding: 2em calc(50% - 22em);
   }
   @include mq($mq-l){
+    padding: 3em;
     padding: 3em -webkit-calc(50% - 24em);
     padding: 3em calc(50% - 24em);
   }
