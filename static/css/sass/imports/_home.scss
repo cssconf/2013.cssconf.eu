@@ -65,7 +65,7 @@
         display: block;
         margin: 0 auto 55px;
         border-radius: 50%;
-        @include single-transition(all, .25s, ease-in, 0);
+        @include single-transition(all, .25s, ease-in, 0s);
         &:hover {
           width: 80%;
           border-radius: 100% 0%;
