@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "jekyll  serve --watch --config _config.dev.yml"
+    "start": "jekyll serve --watch --config _config.dev.yml"
   },
   "repository": {
     "type": "git",
