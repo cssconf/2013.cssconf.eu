@@ -4,5 +4,5 @@ pygments: true
 name:     CSSconf.eu
 env:      dev
 cdn:
-url:  http://2013.cssconf.eu
+url:  https://2013.cssconf.eu
 hash:
