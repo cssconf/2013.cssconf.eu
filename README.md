@@ -16,4 +16,4 @@
 
 ## Deploy
 
-    $ grunt deploy
+    $ npx grunt deploy
