@@ -85,4 +85,5 @@ module.exports = (grunt) ->
     'shell:gitGhPages'
     'shell:gitRebaseMaster'
     'shell:gitPushGhPages'
+    'shell:gitMaster'
   ]
