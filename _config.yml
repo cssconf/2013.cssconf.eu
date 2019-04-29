@@ -1,5 +1,5 @@
 name: CSSconf.eu
 env:  prod
 # hash is replaced automatically during deployment
-cdn:  https://2013.cssconf.eu
+cdn:  https://2013.cssconf.eu/cdn/6482d23
 url:  https://2013.cssconf.eu
